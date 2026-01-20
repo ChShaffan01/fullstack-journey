@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+        body{
+            counter-reset: section;
+        }
+        .div1{
+            position: relative;
+            top: 10px;
+            left: 50px;
+           
+        }
+        .div2{
+            
+            position: absolute;
+            top: 10px;
+            left: 300px;
+        }
+        .div3{
+            position: absolute;
+            top: 10px;
+            left:500px ;
+        }
+        .h1{
+            counter-reset:subsection;
+        }
+        .h1::before{
+            counter-increment: section ;
+            content:"section" counter(section) ":"" ";
+           
+        }
+        .p1::before{
+            counter-increment: subsection;
+            content:counter(section)"."
+            counter(subsection)" ";
+
+        }
+        .h2{
+            counter-reset:subsection;
+        }
+        .h2::before{
+            counter-increment: section;
+            content:"section" counter(section)":"" ";
+
+        }
+        .p2::before{
+            counter-increment: subsection;
+            content: counter(section)"."
+            counter(subsection)" ";
+        }
+        .h3{
+            counter-reset: subsection;
+        }
+        .h3::before{
+            counter-increment: section;
+            content: "section" counter(section)":"" ";
+
+        }
+        .p3::before{
+            counter-increment: subsection;
+            
+            content: counter(section)"."
+            counter(subsection)":"" ";
+
+        }
+    </style>
+</head>
+
+<body>
+    <div class="div1">
+    <h1 class="h1">name</h1>
+    <p class="p1">shaffan</p>
+    <p class="p1">shayan</p>
+    <p class="p1">ahmad</p>
+    <p class="p1">huraira</p>
+</div>
+<div class="div2">
+    <h1 class="h2">age</h1>
+    <p class="p2">16</p>
+    <p class="p2">19</p>
+    <p class="p2">17</p>
+    <p class="p2">24</p>
+</div>
+<div class="div3">
+    <h1 class="h3">class</h1>
+    <p class="p3">1st year</p>
+    <p class="p3">uni</p>
+    <p class="p3">uni</p>
+    <p class="p3">master</p>
+</div>
+</body>
+
+</html>

@@ -1,0 +1,96 @@
+body{
+    background-color: rgb(253, 230, 173);
+    
+}
+.h1{
+    text-align: center;
+    text-shadow: 2px 2px 5px rgb(134, 134, 130);
+}
+table{
+    width: 85%;
+    margin:50px ;
+}
+.h2{
+    text-align: center;
+    color: rgba(29, 223, 223, 0.74);
+}
+
+.p{
+    margin-left: 300px;
+}
+#h3{
+    text-align: center;
+}
+span{
+    font-size: 25px;
+}
+#s1{
+    margin-left: 220px;
+}
+#hh1{
+    text-align: center;
+}
+#sp1{
+    margin-left: 100;
+}
+.ss1{
+  margin-left: 545px;
+}
+.ss2{
+    margin-left: 900px;
+  
+}
+.s11{
+    margin-left: 150px;
+}
+.s11,.ss2{
+    display: inline;
+}
+.t11{
+    margin-left: 420px;
+    border: 1px solid rgb(36, 34, 34);
+}
+#p1{
+    margin-left: 350px;
+}
+.c0{
+    margin-left: 420px;
+
+}
+.c1{
+    text-decoration: underline;
+}
+.ss{
+    margin-left: 50px;
+}
+.sss{
+    margin-left: 180px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+.r1{
+    margin-left:250px ;
+}
+.d1{
+    margin: 50px;
+}
+.ppp1{
+    margin-left: 900px;
+    text-align: center;
+}
+.d11{
+    margin-left: 1050px ;
+    font-family: segoe script;
+
+}
+#s12{
+    margin-left: 910px;
+   
+    
+}
+#sp1{
+ margin-left: 1050px;
+}
+#id1{
+   text-align: center;
+}
+    

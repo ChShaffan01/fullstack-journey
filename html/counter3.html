@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title><style>
+        body{
+            counter-reset: shaffan ;
+        }
+      h1{
+        counter-reset: subsection;
+        background-color: gold;
+        display: inline-block;
+        
+      }
+        h1::before{
+            counter-increment: shaffan ;
+            content:"chapter" counter(shaffan)" : ";
+            color: yellowgreen;
+            background-color: black;
+        }
+       h2{
+        padding-left: 150px;
+       
+        
+       }
+        h2::before{
+            counter-increment: subsection;
+            content: counter(shaffan)"."
+            counter(subsection)" : ";
+            color: dodgerblue;
+            background-color: orange;
+        }
+    </style>
+</head>
+<body>
+    <h1>name</h1>
+    <h2>shaffan</h2>
+    <h2>ali</h2>
+    <h2>shayan</h2>
+    <h1>age</h1>
+    <h2>17</h2>
+    <h2>18</h2>
+    <h2>17</h2>
+    <h1>mobile</h1>
+    <h2>infinix</h2>
+    <h2>techno</h2>
+    <h2>redme</h2>
+    
+</body>
+</html>

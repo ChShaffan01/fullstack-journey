@@ -1,0 +1,21 @@
+ /* p{
+            font-family: monospace;
+            color: hsl(122, 120%, 50%);
+            border: 1px solid black; 
+            padding: 100px;
+            margin: 100px;
+
+        } */
+a:link{
+    color: aqua;
+}
+
+a:visited{
+    color: beige;
+}
+a:hover{
+    color: rgb(65, 233, 210);
+}
+a:active{
+    color: black;
+}

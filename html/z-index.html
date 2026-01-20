@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #div{
+            position: relative;
+            left: 200px;
+            top: 100px;
+            border: 2px solid darkturquoise;
+            height: 300px;
+            width: 300px;
+            background-color: #080808;
+        }
+
+        #d1{
+            position: absolute;
+            left: 30px;
+            top: 30px;
+            border: 1px solid gainsboro;
+            height: 150px;
+            width: 150px;
+            background-color: blue;
+            z-index: 4;
+        }  #d2{
+            position: absolute;
+            left: 50px;
+            top: 50px;
+            border: 1px solid gainsboro;
+            height: 150px;
+            width: 150px;
+            background-color: red;
+            z-index: 3;
+        }  #d3{
+            position: absolute;
+            left: 70px;
+            top: 70px;
+            border: 1px solid gainsboro;
+            height: 150px;
+            width: 150px;
+            background-color: aquamarine;
+            z-index: 2;
+          
+        }  #d4{
+            position: absolute;
+            left: 90px;
+            top: 90px;
+            border: 1px solid gainsboro;
+            height: 150px;
+            width: 150px;
+            background-color: gold;
+            z-index: 1;
+          
+        }
+    </style>
+</head>
+<body>
+    <!-- <nav>z-index iformation</nav> -->
+    <!-- z-index value dicending order yani k revrse value kam krti he make shor jo kam bhi tu z index pe kr raha h uski value dicending order ho -->
+    <div id="div">
+        <div id="d1">1</div>
+        <div id="d2">2</div>
+        <div id="d3" >3</div>
+        <div id="d4">4</div>
+    </div>
+    
+</body>
+</html>
