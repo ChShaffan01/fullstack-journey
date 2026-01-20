@@ -1,0 +1,470 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="Description" content="Enter your description here" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.3/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+    <link rel="stylesheet" href="assets/css/style.css"> <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <title>Title</title>
+    <style>
+        body {
+            width: 97.7vw;
+            height: 100vh;
+            /* background-color: #c97f7f; */
+        }
+
+        .navi {
+            font-size: 2em;
+            margin-top: 10px;
+            /* width: 101%; */
+        }
+
+        li {
+            list-style: none;
+        }
+
+        .logo {
+            font-style: italic;
+            font-size: 1.3em;
+            font-weight: bold;
+            margin-bottom: 30px;
+        }
+
+        .sec-1 {
+            background-image: url(img/organic-food-benefits.jpg);
+            background-size: cover;
+            background-repeat: no-repeat;
+            height: 85%;
+            width: 101%;
+        }
+
+        .fake {
+            color: transparent;
+        }
+
+        .div1 {
+            font-size: 3em;
+            margin-top: 200px;
+            font-weight: bolder;
+            width: 600px;
+            margin-left: 100px;
+            text-align: center;
+        }
+
+        .div2 {
+            margin-top: 30px;
+            text-align: center;
+            font-size: 1.4em;
+            margin-left: 300px;
+            /* font-weight: bold; */
+            width: 200px;
+            border-radius: 20px;
+        }
+
+        .sec-2 {
+            margin-top: 100px;
+            /* margin-left: 200px; */
+            text-align: center;
+            font-weight: bold;
+            width: 100%;
+        }
+
+        .sec-3 {
+            margin-top: 200px;
+            text-align: center;
+
+        }
+
+        .s3h1 {
+            font-size: 4em;
+            font-weight: bold;
+        }
+
+        .s3h2 {
+            font-weight: bold;
+            font-size: 1.2em;
+        }
+
+        .s3d1 {
+            text-align: center;
+            font-style: italic;
+            font-size: 1.5em;
+            font-weight: bolder;
+            width: 100%;
+
+        }
+
+        .s3d2 {
+            margin-top: 30px;
+            text-align: center;
+            font-size: 1.4em;
+            /* font-weight: bold; */
+            width: 200px;
+            border-radius: 20px;
+        }
+        .img:hover{
+            /* box-shadow: 2px 2px 10px silver; */
+            /* border-radius: 10px; */
+          transform: scale(1.1,1.1);
+          transition: all 0.3s;
+        }
+        .sec-4{
+            margin-top: 200px;
+           
+        }
+        
+        .s4d1{
+           margin-left: 30px;
+        }
+        .s4d2{
+            font-size: 2em;
+           margin-top: 50px;
+           
+        }
+        .img-2{
+            border-radius: 20px;
+        }
+     .sec-5{
+        margin-top: 200px;
+        
+     }
+    
+       h5{
+        margin-top: 10px;
+        font-weight: bold;
+        color: #3a3838;
+       }
+       .s5d1{
+        margin-top: 100px;
+       }
+       .s5b1{
+        margin-left: 800px;
+        margin-top: 50px;
+       }
+       .sec-6{
+margin-left: 20px;
+    background-image: url(item-img/shp-1.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100%;
+    margin-top: 200px;
+    border-radius: 20px;
+    animation-name: slide;
+    animation-duration: 5s;
+    animation-delay: 5s;
+    animation-iteration-count: 1 ;
+     overflow: hidden;
+     
+       }
+       @keyframes slide {
+        0%{
+            margin-left: -500px;
+        }
+        25%{
+            margin-left: -200px;
+        }
+        50%{
+            right: 100px;
+        }
+
+       }
+       @font-face {
+        font-family: sss;
+        src: url(item-img/Sofia-Regular.ttf);
+       }
+       .s6d1{
+        margin-left: 800px;
+        color: #c6f7bc;
+        font-size: 5em;
+        text-align: center;
+        margin-top: 100px;
+        /* width: 800px; */
+ font-family: sss;
+       }
+       .s6b1{
+        margin-left: 1170px;
+        margin-top: 20px;
+        border-radius: 20px;
+       } 
+     
+      .form-control{
+        width: 300px;
+        margin: 20px;
+        font-size: 1.2em;
+        
+      }
+      .s7d1{
+        margin-top: 100px;
+      }
+      .s7d2{
+        width:500px;
+      }
+      .s7f1{
+        margin-left: 400px;
+      }
+      .s7f2{
+          margin-top: -290px;
+          margin-left: 400px;
+      }
+      .s7b1{
+        margin-top: 80px;
+      }
+      footer{
+        background: #000000;
+        margin-top: 100px;
+        width: 100%;
+        
+
+      }
+      .fd1{
+        color: #fff;
+        text-align: center;
+       
+      }
+      footer h1{
+        margin-top: 80px;
+        
+      }
+      
+      .finput{
+        background: #000;
+        margin-top: 20px;
+        color: #fff;
+        font-size: 1.5em;
+        width: 600px;
+        padding-left: 10px;
+        border: 2px solid white;
+      }
+      .fb1{
+        padding: 8px;
+       
+      width: 100px;
+        text-align: center;
+        color: black;
+        border:2px solid #fff;
+        background: #fff;
+        border-radius: 5px;
+      }
+      .span{
+       margin-top: -43px;
+       margin-left: 696px;
+      }
+      .fd2{
+        margin-top: 100px;
+        color: #ffffff;
+       margin-left: 100px;
+      }
+      .fd3 li{
+       font-size:1.5em;
+      }
+      .fd4 a{
+        color: #fff;
+        font-size: 3em;
+      }
+      .a1 :hover{
+        color: orange;
+      }
+      .fd3 :hover{
+        color:aquamarine;
+      }
+     .fl{
+        color: #fff;
+        text-align: center;
+        font-size: 1.5em;
+     }
+     .hr{
+        border-bottom: 2px dotted gainsboro;
+        width: 1300px;
+       margin-left: 200px;
+     }
+    </style>
+</head>
+
+<body>
+    <!-- ------------------------------------------------------------------------------- -->
+    <header class="bg-light" style="width: 101%;">
+        <div class="fake">..</div>
+        <nav class="nav navi d-flex justify-content-between mr-5px">
+            <li class="logo ml-4 text-secondary">ORGANIC</li>
+            <li class="nav-item  d-flex">
+                <a class="nav-link active" href="#sec-1">Home</a>
+                <a class="nav-link active" href="#sec-3">Trending</a>
+                <a class="nav-link active" href="#store">Store</a>
+                <a class="nav-link active" href="#contact">Contact</a>
+
+            </li>
+        </nav>
+    </header>
+    <section class="sec-1" id="sec-1">
+        <div class="fake">..</div>
+        <div class="div1">NATURE HAS ALWAYS CARED FOR US !</div>
+        <div class="div2 btn btn-outline-danger p-2">More tips</div>
+
+    </section>
+    
+    <section class="sec-2 row">
+        <li class="col-4"><img src="img/banana_9861871.png" height="150px">
+            <br>NATURAL
+        </li>
+        <li class="col-4">
+            <img src="img/fruit_15613022.png" height="150px">
+            <br>ORGANIC
+        </li>
+        <li class="col-4"><img src="img/food_13747069.png" height="150px">
+            <br>HEALTH
+        </li>
+    </section>
+    <section class="sec-3" id="sec-3">
+        <h1 class="s3h1">What's Trending</h1>
+        <h4 class="text-danger s3h2">Be Healthy Organic Food</h4>
+        <div class="s3d1 row">
+            <li class="col-3 img"><img  src="img/chips.jpeg" height="300px"><br>Bingo Masala</li>
+            <li class="col-3 img"><img  src="img/cola.png" height="300px"><br>Cola Drink</li>
+            <li class="col-3 img"><img  src="img/rice.webp" height="300px"><br>Basmati Rice</li>
+            <li class="col-3 img"><img  src="img/milk-5.jpg" height="300px"><br>Healthy MIlk</li>
+        </div>
+        <div ><a class="s3d2 btn btn-outline-danger p-2"  href="#">Click for more</a></div>
+    </section>
+<section class="sec-4">
+  
+           <h1 class="s3h1 text-center">Welcome To Our Organic Food Sociaty</h1>
+           <h4 class="text-danger text-center mt-3">Be Healthy Organic Food</h4>
+           <div class="s4d1 row">
+            <li class="col-4 s4d2"><img class="img-2" src="img/img-3.jpeg" height="300px" width="530px"><br><h2 class="mt-3 ml-3">Organic Food</h2> Organic food is grown naturally, free from chemicals and GMOs. It’s healthier, eco-friendly, and supports sustainable farming.</li>
+            <li class="col-4 s4d2"><img class="img-2" src="img/img-1.jpeg" height="300px" width="530px"><br><h2 class="mt-3 ml-3">Best Quality Food</h2> combines freshness, nutrition, and taste. It’s sourced responsibly, free from harmful additives, and made with premium ingredients.</li>
+            <li class="col-4 s4d2 "><img class="img-2" src="img/img-2.jpeg" height="300px" width="530px"><br><h2 class="mt-3 ml-3">Save Delivery</h2>We ensure safe and fast delivery, providing securely handled packages and timely service without compromising quality or satisfaction.</li>
+        </div>
+        <div ><a class="s3d2 btn btn-outline-danger p-2 mt-5"  href="" style="margin-left: 750px;">Submit</a></div>
+</section>
+
+<section class="sec-5 " id="store">
+                 
+    <h1 class="s3h1 text-center">Explore Our Store</h1>
+    <h4 class="text-danger text-center mt-3">Pick your product From Our Store</h4>
+    
+    
+    <div class="s3d1 row s5d1">
+        <li class="col-3 img"><img  src="item-img/oats-g.jpeg" height="300px"><br>Oats<br><h5>Rs_849.99</h5></li>
+        <li class="col-3 img"><img  src="item-img/flour-g.jpeg" height="300px"><br>White Flour<br><h5>Rs_112.99</h5></li>
+        <li class="col-3 img"><img  src="img/rice.webp" height="300px"><br>Basmati Rice<br><h5>Rs_419.99</h5></li>
+        <li class="col-3 img"><img  src="item-img/chocos-g.jpeg" height="300px"><br>Nesquik Choccos<br><h5>Rs_399.99</h5></li>
+    </div><br><br>
+    <div class="s3d1 row ">
+        <li class="col-3 img"><img  src="item-img/redbull-dl.jpeg" height="300px"><br>Red Bull<br><h5>Rs_494.99</h5></li>
+        <li class="col-3 img"><img  src="item-img/monster-d.jpeg" height="300px"><br>Monster Energy<br><h5>Rs_119.99</h5></li>
+        <li class="col-3 img"><img  src="item-img/juice-d.jpeg" height="300px"><br>Nestle Juice<br><h5>Rs_119.99</h5></li>
+        <li class="col-3 img"><img  src="img/cola.png" height="300px"><br>Cola Classic<br><h5>Rs_115.99</h5></li>
+    </div><br><br>
+    <div class="s3d1 row">
+        <li class="col-3 img"><img  src="item-img/yogurt-f.jpeg" height="300px"><br>Nestle Yogurt<br><h5>Rs_259.99</h5></li>
+        <li class="col-3 img"><img  src="item-img/cream-fff.jpeg" height="300px"><br>Delicious Cream<br><h5>Rs_199.99</h5></li>
+        <li class="col-3 img"><img  src="item-img/desi dhee-f.jpeg" height="300px"><br>Desi Ghee<br><h5>Rs_799.99</h5></li>
+        <li class="col-3 img"><img  src="img/milk-5.jpg" height="300px"><br>Healthy MIlk<br><h5>Rs_219.99</h5></li>
+    </div> <br><br>
+    <div class="s3d1 row">
+        <li class="col-3 img"><img  src="img/chips.jpeg" height="300px"><br>Bingo Masala<br><h5>Rs_89.99</h5></li>
+        <li class="col-3 img"><img  src="item-img/chip2.jpeg" height="300px"><br>PeaTos cheese<br><h5>Rs_139.99</h5></li>
+        <li class="col-3 img"><img  src="item-img/chip4.jpeg" height="300px"><br>BBQ Lays<br><h5>Rs_97.99</h5></li>
+        <li class="col-3 img"><img  src="item-img/chip5.jpeg" height="300px"><br>Doritos Cheese<br><h5>Rs_89.99</h5></li>
+    </div> <br> <br>
+    <div class="s3d1 row">
+        <li class="col-3 img"><img  src="item-img/nugget-fro.jpeg" height="300px"><br>Chicken Nuggets<br><h5>Rs_1499.99</h5></li>
+        <li class="col-3 img"><img  src="item-img/Roll-fro.jpeg" height="300px"><br>Vegi SpringRoll<br><h5>Rs_399.99</h5></li>
+        <li class="col-3 img"><img  src="item-img/kabab-fro.jpeg" height="300px"><br>Seekh kabab<br><h5>Rs_899.99</h5></li>
+        <li class="col-3 img"><img  src="item-img/strawberries-fro.jpeg" height="300px"><br>Stawberries<br><h5>Rs_1199.99</h5></li>
+    </div>
+    <div ><a class="s3d2 s5b1 btn btn-outline-danger p-2"  href="#">Click for more</a></div>
+</section>
+<section class="sec-6">
+    <div class="fake">..</div>
+
+        <div class="s6d1">Unlock Your Potentail With Good nutrition
+           <h4 class="s6h1 text-light">Always Get Good Food </h4>  </div>
+            <a href="#"> <div class="btn s6b1 s3d2 btn-outline-light">More for as</div></a>
+ </div>
+</section>
+<section class="sec-7" id="contact">
+    <h1 class="s3h1 text-center">Contact Us</h1>
+    <h4 class="text-danger text-center mt-3">Always Be In Touch With US</h4>
+   
+    <div class="s7f1 ">  
+   <div class="form-group d-flex justify-content-center s7d1">
+    <input  class="form-control" type="text" name="" placeholder="Your Name">
+    <input class="form-control" type="email" name="" placeholder="Your Email">
+   </div>
+   <div class="form-group d-flex justify-content-center">
+    <textarea class="form-control s7d2" rows="5" id="comment" placeholder="Enter your Message"></textarea>
+  </div></div>
+
+  <div class="s7f2 ">
+    <h4>Location</h4>
+   <div>Moti Bazar Nowshera Cantt</div><br>
+    <h4>Phone</h4>
+    <div>03086367941</div><br>
+    <h4>Email</h4>
+    <div>Chaudharyshaffan@gmail.com</div>
+</div>
+<div ><a class="s3d2 s5b1 s7b1 btn btn-outline-primary p-2"  href="#">Submit</a></div>
+</section>
+
+<footer>
+    <div class="fake">..</div>
+        <div class="fd1">
+<h1>Join Our Organic Society</h1><br>
+<input class="finput" type="text" placeholder="Enter Your Email">
+<div class="span"><button class="fb1 btn " >Submit</button></div>
+</div>
+<div class="fd2 row">
+
+    <div class="fd3 col-3">
+        <h3>CUSTOMER CARE</h3><br>
+        <li>Regular</li>
+        <li>On Time</li>
+        <li>Always care</li>
+    </div>
+    <div class="fd3 col-3">
+        <h3>FAQ's</h3><br>
+        <li>No E-Charges</li>
+        <li>Shoping & Delivery</li>
+        <li>Always Care</li>
+    </div>
+    <div class="fd3 col-3">
+        <h3>OUR COMPANT</h3><br>
+        <li>About</li>
+        <li>New Food</li>
+        <li>Product</li>
+    </div>
+    <div class="fd4 a1 col-3">
+        <h3>Social Media</h3><br>  
+        <a class="a1" href="https://wa.me/qr/ZXGG7CXIOXNQI1"><i class='bx bxl-whatsapp'></i></a>
+          <a class="a1" href="#"><i class='bx bxl-facebook'></i></a>
+          <a class="a1" href="#"><i class='bx bxl-twitter'></i></a>
+          <a class="a1" href="#"><i class='bx bxl-linkedin'></i></a>                                                                                                                        
+    </div>
+</div><br><br>
+<div class="hr"></div><br>
+<div class="fl">Copyright &copy;2024 All Rights Reserved | This Template Is Made With By Ch-Shaffan</div>
+
+
+
+</footer>
+
+
+
+
+
+
+
+
+    <!-- ------------------------------------------------------------------------------- -->
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.1/umd/popper.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.3/js/bootstrap.min.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title><link rel="stylesheet" href="bootstrap.css">
+</head>
+<body>
+    <!-- ye ek list crate krti he or style bhi add kr deti he or parent me list-group or child me list-group-item  -->
+    <ul class="list-group">
+     <li class="list-group-item ">normal list</li>
+     <li class="list-group-item">normal list</li>
+     <li class="list-group-item active"> active list</li>
+     <li class="list-group-item disabled">disabled list</li>
+    </ul> <br><br>
+    <!-- color bhi adda kr skte he  -->
+     <ul class="list-group">
+     <li class="list-group-item list-group-item-primary">normal list</li>
+     <li class="list-group-item list-group-item-info">normal list</li>
+     <li class="list-group-item list-group-item-warning"> active list</li>
+     <li class="list-group-item list-group-item-light">disabled list</li>
+    </ul> <br><br>
+    <!-- a wala elemet me bhi de skte he li ki jagha or is me action bhi add kiya he mean hover lag jay  -->
+      <ul class="list-group">
+   <a href="#" class="list-group-item list-group-item-action">list action 1</a>
+   <a href="#" class="list-group-item list-group-item-action">list action 2</a>
+   <a href="#" class="list-group-item list-group-item-action">list action 3</a>
+   <a href="#" class="list-group-item list-group-item-action">list action 4</a>
+    </ul>
+    <br><br> 
+    <!-- flush border remove kr detahe sirf bootom chorhta he -->
+    <ul class="list-group list-group-flush">
+        <li class="list-group-item">normal list</li>
+        <li class="list-group-item">normal list</li>
+       </ul> <br><br>
+
+       <ul class="list-group">
+        <li class="list-group-item d-flex justify-content-between align-items-center">normal list
+            <span class="badge bg-danger badge-pill">badge</span>
+        </li>
+        <li class="list-group-item d-flex justify-content-between align-items-center">normal list <span class="badge bg-danger badge-pill">99 <sup>+</sup></span></li>
+   
+        <li class="list-group-item d-flex justify-content-between align-items-center">disabled list <span class="badge bg-danger badge-pill">hello</span></li>
+       </ul>
+</body>
+</html>

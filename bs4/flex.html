@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="Description" content="Enter your description here" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.3/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <title>Title</title>
+</head>
+
+<body>
+    <!-- ----------------------------------------------------------------------------- -->
+
+                       <!-- parent-prop -->
+
+    <!-- simple flex -->
+    <div class="d-flex p-3 m-3">
+        <div class="bg-primary p-2">home</div>
+        <div class="bg-success p-2">about</div>
+        <div class="bg-info p-2">contact</div>
+    </div>
+
+    <!-- display-inline-flex -->
+    <div class="d-inline-flex p-3 m-3">
+        <div class="bg-primary p-2">home</div>
+        <div class="bg-success p-2">about</div>
+        <div class="bg-info p-2">contact</div>
+    </div>
+
+    <!-- flex row -->
+    <div class="d-flex flex-row p-3 m-3">
+        <div class="bg-primary p-2">home</div>
+        <div class="bg-success p-2">about</div>
+        <div class="bg-info p-2">contact</div>
+    </div>
+    <!-- flex-row reverse -->
+    <div class="d-flex  flex-row-reverse p-3 m-3">
+        <div class="bg-primary p-2">home</div>
+        <div class="bg-success p-2">about</div>
+        <div class="bg-info p-2">contact</div>
+    </div>
+
+<!-- flex-column -->
+    <div class="d-flex  flex-column p-3 m-3">
+        <div class="bg-primary p-2">home</div>
+        <div class="bg-success p-2">about</div>
+        <div class="bg-info p-2">contact</div>
+    </div>
+    <!-- flex-column-reverse -->
+    <div class="d-flex  flex-column-reverse p-3 m-3">
+        <div class="bg-primary p-2">home</div>
+        <div class="bg-success p-2">about</div>
+        <div class="bg-info p-2">contact</div>
+    </div>
+    <br><br>
+
+<!-- justify-contant-start -->
+    <div class="d-flex justify-content-strat m-3">
+        <div class="bg-primary p-2">home</div>
+        <div class="bg-success p-2">about</div>
+        <div class="bg-info p-2">contact</div>
+    </div>  
+
+    <!-- justify-contant-center -->
+    <div class="d-flex justify-content-center m-3">
+        <div class="bg-primary p-2">home</div>
+        <div class="bg-success p-2">about</div>
+        <div class="bg-info p-2">contact</div>
+    </div> 
+
+    <!-- justify-contant-end -->
+      <div class="d-flex justify-content-end m-3">
+        <div class="bg-primary p-2">home</div>
+        <div class="bg-success p-2">about</div>
+        <div class="bg-info p-2">contact</div>
+    </div> 
+    
+    <!-- justify-contant-between -->
+    <div class="d-flex justify-content-between m-3 ">
+        <div class="bg-primary p-2">home</div>
+        <div class="bg-success p-2">about</div>
+        <div class="bg-info p-2">contact</div>
+    </div>   
+    
+    <!-- justify-contant-around -->
+    <div class="d-flex justify-content-around m-3">
+        <div class="bg-primary p-2">home</div>
+        <div class="bg-success p-2">about</div>
+        <div class="bg-info p-2">contact</div>
+    </div>  
+<br><br><br><br>
+                        <!-- child-prop  -->
+
+<!-- flex-fill -->
+<div class="d-flex ">
+    <div class="bg-info p-3 flex-fill">home</div>
+    <div class="bg-danger p-3 flex-fill">contact</div>
+    <div class="bg-secondary p-3 flex-fill">about</div>
+</div>
+<br>
+<!-- flex-grow ye lagane se wo baqi sari free space cover kr leta he or ye ek hi class he isme 1,2,3,4,5 nahi he -->
+<div class="d-flex ">
+    <div class="bg-info p-3 ">home</div>
+    <div class="bg-danger p-3 ">contact</div>
+    <div class="bg-secondary p-3 flex-grow-1">about</div>
+</div>
+<br>
+<!-- order -->
+<div class="d-flex ">
+    <div class="p-2 bg-info order-3">Flex item 1</div>
+    <div class="p-2 bg-warning order-2">Flex item 2</div>
+    <div class="p-2 bg-primary order-1">Flex item 3</div>
+  </div>
+  <br>
+  <!-- mr-auto  -->
+  <div class="d-flex bg-secondary">
+    <div class="p-2 mr-auto bg-info">Flex item 1</div>
+    <div class="p-2 bg-warning">Flex item 2</div>
+    <div class="p-2 bg-primary">Flex item 3</div>
+  </div> 
+  <br>
+   <!-- ml-auto  -->
+  <div class="d-flex bg-secondary">
+      <div class="p-2 bg-warning">Flex item 2</div>
+      <div class="p-2 bg-primary">Flex item 3</div>
+      <div class="p-2 ml-auto bg-info">Flex item 1</div>
+  </div>
+
+<br>
+
+<!--
+ .d-*-flex	Creates a flexbox container for different screens	
+.d-*-inline-flex	Creates an inline flexbox container for different screens	
+Direction	 	 
+.flex-*-row	Display flex items horizontally on different screens	
+.flex-*-row-reverse	Display flex items horizontally, and right-aligned, on different screens	
+.flex-*-column	Display flex items vertically on different screens	
+.flex-*-column-reverse	Display flex items vertically, with reversed order, on different screens screens	
+Justified Content	 	 
+.justify-content-*-start	Display flex items from the start (left-aligned) on different screens	
+.justify-content-*-end	Display flex items at the end (right-aligned) on different screens	
+.justify-content-*-center	Display flex items in the center of a flex container on different screens	
+.justify-content-*-between	Display flex items in "between" on different screens	
+.justify-content-*-around	Display flex items "around" on different screens	
+Fill / Equal Width	 	 
+.flex-*-fill	Force flex items into equal widths on different screens	
+Grow	 	 
+.flex-*-grow-0	Don't make the items grow on different screens	 
+.flex-*-grow-1	Make items grow on different screens	 
+Shrink	 	 
+.flex-*-shrink-0	Don't make the items shrink on diferent screens	 
+.flex-*-shrink-1	Make items shrink on different screens	 
+Order	 	 
+.order-*-0-12	Change the order from 0 to 12 on small screens	
+Wrap	 	 
+.flex-*-nowrap	Don't wrap items on different screens	
+.flex-*-wrap	Wrap items on different screens	
+.flex-*-wrap-reverse	Reverse the wrapping of items on different screens	
+Align Content	 	 
+.align-content-*-start	Align gathered items from the start on different screens	
+.align-content-*-end	Align gathered items at the end on different screens	
+.align-content-*-center	Align gathered items in the center on different screens	
+.align-content-*-around	Align gathered items "around" on different screens	
+.align-content-*-stretch	Stretch gathered items on different screens	
+Align Items	 	 
+.align-items-*-start	Align single rows of items from the start on different screens	
+.align-items-*-end	Align single rows of items at the end on different screens	
+.align-items-*-center	Align single rows of items in the center on different screens	
+.align-items-*-baseline	Align single rows of items on the baseline on different screens	
+.align-items-*-stretch	Stretch single rows of items on different screens	
+Align Self	 	 
+.align-self-*-start	Align a flex item from the start on different screens	
+.align-self-*-end	Align a flex item at the end on different screens	
+.align-self-*-center	Align a flex item in the center on different screens	
+.align-self-*-baseline	Align a flex item on the baseline on different screens	
+.align-self-*-stretch	Stretch a flex item on different screens -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <!-- ----------------------------------------------------------------------------- -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.1/umd/popper.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.3/js/bootstrap.min.js"></script>
+</body>
+
+</html>

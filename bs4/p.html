@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <title>Food Web</title>
+    <style>
+        .food-web {
+            display: flex;
+            justify-content: center;
+            flex-direction: column;
+            align-items: center;
+            margin: 50px;
+        }
+
+        .level {
+            display: flex;
+            justify-content: center;
+            margin: 20px 0;
+        }
+
+        .organism {
+            border: 2px solid #28a745;
+            padding: 15px;
+            border-radius: 10px;
+            margin: 0 10px;
+            text-align: center;
+            width: 120px;
+        }
+
+        .arrows {
+            width: 50px;
+            text-align: center;
+            font-size: 24px;
+            color: #28a745;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container food-web">
+        <h1 class="text-center">Food Web</h1>
+
+        <div class="level">
+            <div class="organism">Sunlight</div>
+        </div>
+
+        <div class="level">
+            <div class="organism">Plants</div>
+            <div class="arrows">↑</div>
+            <div class="organism">Phytoplankton</div>
+        </div>
+
+        <div class="level">
+            <div class="organism">Herbivores</div>
+            <div class="arrows">↑</div>
+            <div class="organism">Zooplankton</div>
+        </div>
+
+        <div class="level">
+            <div class="organism">Carnivores</div>
+            <div class="arrows">↑</div>
+            <div class="organism">Fish</div>
+        </div>
+
+        <div class="level">
+            <div class="organism">Apex Predators</div>
+            <div class="arrows">↑</div>
+            <div class="organism">Bigger Fish</div>
+        </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+
+</html>
