@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class="div1" onmousedown="hlo(this)" onmouseup="hlo2(this)">hello</div>
+    <div id="div2" onmouseover="hlo3(this)" onmouseout="hlo4(this)">hello how are you</div>
+    <script>
+        function hlo(x){
+         x.style.backgroundColor="blue";   
+       x.innerHTML='how are you';
+        }
+        function hlo2(x){ 
+     x.style.backgroundColor="red";    
+       x.innerHTML='good bye';
+        }
+        
+        function hlo3(x){
+            x.innerHTML='how are you';
+            x.style.backgroundColor="red";    
+        }
+        function hlo4(x){ 
+            x.style.backgroundColor="blue";   
+       x.innerHTML='good bye';
+        }
+    </script>
+</body>
+</html>

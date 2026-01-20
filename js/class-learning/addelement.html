@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input id="div07"></input>
+    <button id="div7">submit</button>
+    <div id="div8"></div>
+    <script>
+          var c = document.getElementById("div7");
+   c.addEventListener("click", fun1);
+   c2 = document.getElementById("div8");
+    cx=document.getElementById("div07");
+  function fun1(){
+             if (cx >= 10) {
+                c2.innerHTML="you are selected";
+             }
+             else{
+                c2.innerHTML= 'your age is too small';
+             }
+   }
+    </script>
+</body>
+</html>

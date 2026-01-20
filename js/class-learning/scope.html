@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+<script>
+    // scop pe ham var,let,const ko curly braket me band krte he 
+
+    {
+          // LOCAL VAR
+        var x = 20;// ok working 
+        console.log(x);
+    }
+      // GLOBAL VAR
+    var x = 10;//also work
+    console.log(x);
+
+    {
+           // LOCAL LET
+        let y = 30;//ek sath 2 ek jyse name nahi de skte let me to ayse curly braket lagane se koi farq nahi pare ga
+        console.log(y);
+    }
+      // GLOBAL LET
+    let y = 20;// also work
+    console.log(y);
+
+    {
+         // LOCAL CONST
+        const z = 10; //koi farq nahi pare ga q ke ye code braket me he
+        console.log(z);
+    }
+        // GLOBAL CONST
+    const z = 11;
+    console.log(z);
+</script>
+</body>
+</html>

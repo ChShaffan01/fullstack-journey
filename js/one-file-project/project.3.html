@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+  
+    <style>
+        @font-face {
+            font-family: sss;
+            src: url(extra\ bold.ttf);
+        }
+        @font-face {
+            font-family: ss;
+            src: url(text\ border\ no\ color.ttf);
+        }
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body{
+            background-color: #8df6ef;
+        }
+        .div01{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            margin-top: 200px;
+        
+            
+        }
+        .div001{
+            display: flex;
+
+        }
+        .div11{
+            text-align: center;
+           font-size: 5em;
+           font-weight: bolder;
+           font-family:sss ;
+           
+        }
+        #div1{
+            text-align: center;
+           font-size: 7em;
+           font-weight: bold;
+           color: green;
+        }
+        button{
+             margin: 10px;
+            width: 200px;
+            height: 35px;
+            border-radius: 10px;
+            font-size: 1.2em;
+            text-shadow: 1px 1px 2px rgb(62, 62, 65);
+            font-family: ss;
+        }
+        button:hover{
+            background-color: #acf18c;
+          font-family: sss;
+        }
+        button:active{
+            font-family: ss;
+            background-color: #5cfc97;
+        }
+    </style>
+</head>
+<body>
+    <div class="div01">
+        <div class="div11">Counter</div>
+    <div id="div1">0</div>
+    <div class="div001">
+    <button onclick="fun2()">DECREASE</button>
+    <button onclick="fun3()">RESET</button>
+    <button onclick="fun()">INCREASE</button></div></div>
+</body>
+<script>
+    var x = 0;
+  
+    
+    function fun2() {
+        x--;
+        document.getElementById("div1").innerHTML = x;
+    }
+    function fun3() {
+        x = 0;
+        document.getElementById("div1").innerHTML =x;
+        }
+     function fun() {
+       x++;
+             document.getElementById("div1").innerHTML =x;
+               
+            }
+    
+    var y = x-x;
+</script>
+</html>

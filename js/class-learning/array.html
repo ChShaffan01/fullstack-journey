@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id="div0"></div>
+    <script>
+        var y0="";
+        var arr = ["shaffan","shaqir","ahmad","sudais","mohiman",];
+        for (let x = 0; x < arr.length; x++) {
+          y0 += "[ "+ arr[x] + " ]" + "<br>";
+         document.getElementById("div0").innerHTML=y0;
+        }
+
+
+        // arry called phele var bana ke phr usme array ka name or arry braket me index difine krna or ye 0 se shuru hota he [0] is the first element. [1] is the second element.
+        arr2 = ["shaffan2","shaqir2","ahmad2","sudais2","mohiman2",];
+        var y =arr2[0];
+        console.log(y);
+     // array kr andr new value put krna ye purani value ki jagha new value laga deta he or agr extreme value di phr ye issue kare ga work kare ga liqin empty ki jagha le le ga ye ghalat tarika he Adding elements with high indexes can create undefined "holes" in an array:
+     arr3 = ["shaffan3","shaqir3","ahmad3","sudais3","mohiman3",];
+     var y2 = arr3[30]="abd";
+     var y2 = arr3[25]="huraira";
+     var y2 = arr3[1]="abuhuraira";
+     console.log(arr3);
+
+     // array convert string liqin type object hi ho ga sirf string form me likha ho ga
+     arr4 = ["shaffan4","shaqir4","ahmad4","sudais4","mohiman4",];
+     var y3 = arr4.toString();
+     console.log(y3);
+
+      // join wo same to same to string ki tarha he magr yaha ham perametter me value bhi pas kr skte he
+      var y03 = arr4.join(" * ");
+      console.log(y03);
+
+
+     // array length ye array ko plus kr ke length batata he iski length 5 he
+     arr5 = ["shaffan5","shaqir5","ahmad5","sudais5","mohiman5",];
+     var y4 = arr5.length;
+     console.log(y4);
+
+     var y5 = arr5[arr5.length - 1]; // single value define -1 mean last value
+     console.log(y5);
+
+     // push ek extra value add krne ke liye kam ata he ye sahi tarika he wo value last me push kr deta he
+     arr6 = ["shaffan6","shaqir6","ahmad6","sudais6","mohiman6",];
+        arr6.push("azlan");
+        console.log(arr6);
+
+        // cheack array true false
+        ar = ["hello"];
+        ar2={name:"shaffan"};
+       var y7= Array.isArray(ar); // true
+       var y8= Array.isArray(ar2); // false
+console.log(y7);
+console.log(y8);
+
+
+// at() ham iske  perametter me index dalte he phr us index me jonsi value hoti he wo print kr deti he ye bhi array braket ki tarha he
+arr7 = ["shaffan7","shaqir7","ahmad7","sudais7","mohiman7",];
+var y9 = arr6.at(2);
+console.log(y9); // ahmad7
+
+// push () ek value array ke last me push kr deta he  iske pera metter me bs value dalni hoti he 
+arr8 = ["shaffan8","shaqir8","ahmad8","sudais8","mohiman8",];
+arr8.push("fawad");
+console.log(arr8);
+
+// unshift() bhi push ki tarha bs yaha value array ke first me jati he or push me last me
+arr9 = ["shaffan9","shaqir9","ahmad9","sudais9","mohiman9",];
+arr9.unshift("fawad");
+console.log(arr9);
+
+// pop() array ki last value delete kr deta he or empty wale holes bhi nahi chohrta he 
+arr10 = ["shaffan10","shaqir10","ahmad10","sudais10","mohiman10",];
+arr10.pop();
+console.log(arr10);
+
+//sift() first value delete krta he array se 0 value
+arr11 = ["shaffan11","shaqir11","ahmad11","sudais11","mohiman11",];
+arr11.shift();
+console.log(arr11);
+
+// lenght ayse bhi use kr skte he ye last me value pass kr dega
+arr12 = ["shaffan12","shaqir12","ahmad12","sudais12","mohiman12",];
+arr12[arr12.length]="umer";
+console.log(arr12);
+
+// array concat ye 2 ya 2 ye zyada array ko ek sath krta he concat
+arr13 = ["shaffan13","shaqir13","ahmad13","sudais13","mohiman13",];
+arr14 = ["ali13","zakir14","abd14","haider14","hafeez14",];
+arr15 = ["abu huraira15","m zaib15","naeem15","ghayaz15","nazim15",];
+let friends =arr13.concat(arr14);
+let friends3 =arr13.concat(arr14,arr15);
+console.log(friends);
+console.log(friends3);
+
+// copywithin() ye array ke values ki copy bana deta he phele pe value batani hoti he kaha or dosre me copy ka kon c value ki copy print krni he 
+arr16 = ["shaffan16","shaqir16","ahmad16","sudais16","mohiman16"];
+var ar16 = arr16.copyWithin(3,0);
+console.log(ar16);
+
+// splice() new value add krne ke liye kam ata he beach me jaha bhi first perametter me k kaha ye new value add ho gi or second me ye difine krte he kitne elelment delete kare
+arr17 = ["shaffan17","shaqir17","ahmad17","sudais17","mohiman17",];
+arr17.splice(3,0 ,"umer","azlan"); // simple 3 ki jagha me print ho gaya del kuch nahi howa
+console.log(arr17);
+ var ar017=arr17.splice(2,4 ,"umer","azlan"); // kuch value delete ki he
+console.log(ar017);
+
+// slice() real array me changes nahi krta iske liye new array bana hota he 
+//The slice() method creates a new array.
+//The slice() method does not remove any elements from the source array.
+//me  agr ek perametter do ge to jon c number ki value di he usse age ke sare print kr dega ga shuru wale cut kr dega
+arr18 = ["shaffan18","shaqir18","ahmad18","sudais18","mohiman18"];
+ var ar018=arr18.slice(2);
+console.log(ar018);
+
+// slice() me agr 2 perametter pass kare to first me kaha se shuru hona he or second me kitni value cover krni he
+arr19 = ["shaffan19","shaqir19","ahmad19","sudais19","mohiman19"];
+ var ar019=arr19.slice(1,4);// ab ye 3 value cover kr lega
+console.log(ar019);
+    </script>
+</body>
+</html>

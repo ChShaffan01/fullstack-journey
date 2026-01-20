@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id="div01"></div>
+    <div id="div02"></div>
+    <div id="div03"></div>
+    <div id="div04"></div>
+    <script>
+     var x = new Date("2015/10/1");
+     var x = new Date("2015-nov-1");
+     document.getElementById("div01").innerHTML = x;
+
+
+     // get method in date
+     // isme ham date se value la skte he year month day hour min sec milisec
+     var y = new Date();
+     var z = y.getFullYear();
+     var z2 = y.getMonth();
+     document.getElementById("div02").innerHTML = z +" " + z2;
+     
+     
+     var y2 = new Date();
+     var v1 = y2.getUTCFullYear();
+     var v2 = y2.getUTCMonth();
+     document.getElementById("div03").innerHTML = v1 +" " + v2;
+
+
+
+
+     // set date method
+     // isme date set kr skte ho perametter me year month day hour min sec milisec
+    var d = new Date();
+    d.setFullYear(2014,11,10);
+    d.setHours(8);
+    d.setMinutes(10);
+    document.getElementById("div04").innerHTML = d;
+
+    
+
+    </script>
+</body>
+</html>

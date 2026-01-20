@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id="div1" onclick="cs()" >i am shaffan</div>
+
+    <div id="div2">h</div>
+    <div id="div02">h</div>
+    <div id="div002">h</div>
+
+
+    <br>
+    <div id="div3">lenght count</div>
+
+
+    <script>
+        function cs(){
+           
+            console.log("shaffan");
+        }
+        
+        var x=10;
+        var y= new String("20");
+        var t="hello i am shaffan";
+        var bs="there was added back\\slash"
+        document.getElementById("div2").innerHTML="hello my  \"name\" is shaffan";
+        document.getElementById("div02").innerHTML="hello my  \'name\' is shaffan";
+        document.getElementById("div002").innerHTML=bs;
+        document.getElementById("div3").innerHTML=t.length;
+
+
+        //agr number ko bhi quation me band kr diya to wo bhi string kehlai ga
+
+                //x = "10"; '10'  typeof x 'string'
+
+                //agr string ke andr value same na ho to false ay ga agr same value hoi to ture ayga datatype bollean
+
+               // x= "shaffan";'shaffan'
+               //y="shaff";'shaff'x==y false 
+               //y="shaffan";'shaffan'x==y true
+
+
+    </script>
+ 
+       
+
+</body>
+</html>

@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <!-- 1 topic lenght  -->
+    <div>length count <br> var x ='abcdefghijklmnopqrstuvwxyz'; <br>
+        document.getElementById("div01").innerHTML=x.length ;</div>
+    <div id="div01"></div>
+    <br><br>
+    <!-- 2 topic charAT() -->
+    <div id="div02">yaha possition deni hoti he ke kaha se contant start krna he lenght define krni hoti alphaword ki 0
+        se start hoti he or maximun jitne alphaword ho space bhi count hota he or yaha pe negative value work nahi
+        krti// <br> var c="hello my name is shaffan and i lerning programing "<br>`
+        document.getElementById("div03").innerHTML=c.charAt(10);</div>
+    <div id="div03"></div>
+    <br><br>
+    <!-- 3 topic  at() -->
+    <div id="div04">
+        \ isme 2 method he agr - ki side se shuru karuga to ye -0 zera count nahi kare ga -1 se value shuru ho gi first
+        method pe var name or .at(value) krna hota he isme - bhi work krta he secont method me srif var name or [] array
+        braket dalna hota he isme minus value work nahi hota undifined ata he or second method array ki tarha lagta
+        magar ye array nahi hota<br>
+        var a="abcdefghijklmnopqrstuvwxyz"<br>
+        var latter=a.at(-3);//first method negetive value also put <br>
+        var l=a[7];//second method <br>
+        document.getElementById("div05").innerHTML=latter; <br>
+        document.getElementById("div06").innerHTML=l;
+    </div>
+    <div id="div05"></div>
+    <div id="div06"></div>
+<br> <br>
+    <!-- 4 topic slice() -->
+    <div class="div007">ye single alphaword count nahi krta full contant count krta he agr slice(7) diya he to 7 se
+        jitne bhi age word bach gai he wo sare count kare ga for example total value 012345678910
+        slice(3) to ye 2 se age jitni bhi value he count kr lega 345678910 output <br>
+        var text="shaffan, haris, abuhuraira, abdurehman ";<br>
+        var sli=text.slice(0,7);<br>
+        // ek zyada negetive value deni hoti or dusri kam<br>
+        var sl=text.slice(0,-13) <br>
+        document.getElementById("div07").innerHTML=sli; <br>
+        document.getElementById("div08").innerHTML=sl;
+    </div>
+    <div id="div07"></div>
+    <div id="div08"></div>
+<br> <br>
+    <!-- 5 topic substring() -->
+    <div id="div09"><br> substring() is similar to slice(). The difference is that start and end values less than 0 are
+        treated as 0 in substring().If you omit the second parameter, substring() will slice out the rest of the string
+        <br>
+        var subs="shaffan shaiq faiq haris ";<br>
+        document.getElementById("div010").innerHTML=subs.substring(0,7);
+    </div>
+    <div id="div010"></div>
+    <br><br>
+
+    <!-- 6 topic uppercase -->
+    <div id="div011">ye uppercase pe transfer kr deta he text yaha pe phele x=innerHTML take jo div me text he wahi rahe
+        or phr innerHTML=x.upper case kara <br>
+        function upcase(){ <br>
+        var x = document.getElementById("div012").innerHTML; <br>
+        document.getElementById("div012").innerHTML=x.toUpperCase();
+        }</div>
+    <button onclick="upcase()">uppercase</button>
+    <div id="div012">hello how are you</div>
+    <br><br>
+    <!-- 7 topic lowercase -->
+    <div id="div013">ye lowercase pe transfer kr deta he text yaha pe phele x=innerHTML take jo div me text he wahi rahe
+        or phr innerHTML=x.upper case kara <br>
+        function lowcase(){ <br>
+        var x = document.getElementById("div012").innerHTML; <br>
+        document.getElementById("div012").innerHTML=x.tolowerCase();
+        }</div>
+    <button onclick="lowcase()">lower case</button>
+    <div id="div014">HeLlO HoW ArE yOu</div>
+
+    <br><br>
+    <!-- 8 topic concat() mean 2 & more value + -->
+    <div id="div015">
+        ye method 2 ya 2 se zyada values ki apas me pli=us krta he// <br> first method
+        var con="hello shaffan" <br>
+        var cat="how are you" <br>
+        var concat=con.concat(" ",cat); <br>
+        document.getElementById("div017").innerHTML=concat; <br>
+        //second easy method <br>
+        var con="hello shaffan" <br>
+        var cat="how are you" <br>
+        var concat=con+" "+cat; <br>
+        document.getElementById("div018").innerHTML=concat;</div> <br>
+    output
+    <div id="div017"></div>
+    <div id="div018"></div>
+    <br><br>
+
+    <!-- 9 topic trim() -->
+    <div id="div019">for example koi hamare pass account bana raha he input pe to wo space use kare to wo ghalat ho ga
+        to isko khatam krne ke liye ham trim ka use krte he ye mene console.log() pe kiya he <br>
+        //The trim() method removes whitespace from both sides of a string: <br>
+        var t=" shaffan trim ";<br>
+        var ts=" shaffan trimstart ";<br>
+        var te=" shaffan trimend ";<br>
+        console.log(t.trim());<br>
+        console.log(ts.trimStart());<br>
+        console.log(te.trimEnd());</div><br>
+
+<br> <br>
+    <!-- 10 topic padstart intresting topic  -->
+    <div id="div020">agr text kam he or ham chahte he ke wo space zyada pakre to ham padstart() ka istemal krta he phele
+        ham value define krte he or second me contant ke ham us space fill krne ke liye kiya text krna chahte he
+        padstart (4,0) iska mtbl ke hame 4 degit space me 0000 chaiye aghe var me hy save he phr ye ayse work kare ga
+        00hy or same padstart bhi bs waha ye define krna hota heke end me kitne degit space cover krna he hy00 //
+        <br> var pads="hello"<br>
+        var padstart=pads.padStart(15,"001");<br>
+        document.getElementById("div021").innerHTML=padstart;<br>
+        var padend=pads.padEnd(15,"001");<br>
+        document.getElementById("div022").innerHTML=padend;
+    </div>
+    <div id="div021"></div>
+    <div id="div022"></div>
+<br> <br>
+    <!-- 11 topic repeat() -->
+    <div id="div023">repeat me ham ye define krte he ke hame kitni copy chaiye ye hame copies bana ke deta he repeat()
+        ayse ham repeat key crate krte he or iske perametter me ham number likhte ke kitni copy hame chaiye (10) to ayse
+        ye hame 10 copy bana dega
+        <br>repeat() is not supported in Internet Explorer.<br>
+        var rep="hello how are you "<br>
+        var repeat=rep.repeat(10);<br>
+        document.getElementById("div024").innerHTML=repeat;
+    </div>
+    <div id="div024"></div>
+    <br> <br>
+    <!-- 12 topic replace() intresting topic  -->
+    <div id="div025">replace() kisi contant ko replace krne ke liye kam ata he for example koi value he ap wo change
+        krna chahte ho to replace ke perametter () me pheli wo value jo ap change krna chahte ho liqin uske liye apke
+        contant wo value honi chaiye agr na hoi to ye ignore kr le ga or second value wo jo ap first value ki jagha new value dalna chahte ho wo full word bhi ho skta he ya alphawords bhi kuch <br>
+         "By default, the replace() method replaces only the first match:" <br>
+        var normal="hello who are you"; simple normal string <br>
+        var replace=normal.replace("who","how"); replace method string <br>
+        var replace = normal.replace(/o/g, "hahah"); jaha ye quation ki jgha /value/g use krte he mtlb ke kaha kaha ye word ya aplhaword aya he har waha jagha replace kr do  var replace3 = normal.replace(/ARE/i, "as"); or jab ye use kare iska mtlb he ke ke agr hamne word ya alphaword capital latter pe ya small latter pe likha he to ye lagane se koi farq nahi prta wrna iski jagha quation use karo ge or sentance apne capital latter me liqha ho or ap replace me small latter dalo to work nahi kare ga<br>
+        document.getElementById("div026").innerHTML=normal; <br>
+        document.getElementById("div027").innerHTML=replace;</div>
+    <div id="div026"></div>
+    <div id="div027"></div>
+    <div id="div028"></div>
+
+<br><br>
+           <!-- 13 topic split() -->
+            <div id="div029"> //A string can be converted to an array with the split() method:If the separator is omitted, the returned array will contain the whole string in index [0].If the separator is "", the returned array will be an array of single characters:
+                var split1="hello,shaffan";
+                var split2=split1.split(",");
+                document.getElementById("div030").innerHTML=split2[0];</div>
+            <div id="div030"></div>
+           
+
+    <script>
+        //lenght count method
+        var x = 'abcdefghijklmnopqrstuvwxyz';
+        document.getElementById("div01").innerHTML = x.length;
+
+
+        //charAT() method returns the character at a specified index (position) in a string:
+        var c = "hello my name is shaffan and i lerning programing "
+        // document.getElementById("div03").innerHTML=c.charAt(10-8);
+        document.getElementById("div03").innerHTML = c.charAt(10);
+
+
+        //at() It allows the use of negative indexes while charAt() do not.
+        var a = "abcdefghijklmnopqrstuvwxyz"
+        var latter = a.at(-3);//first method negetive value also put
+        var l = a[7];//second method 
+        document.getElementById("div05").innerHTML = latter;
+        document.getElementById("div06").innerHTML = l;
+
+
+        //slice() extracts a part of a string and returns the extracted part in a new string.The method takes 2 parameters: start position, and end position (end not included).
+        var text = "shaffan, haris, abuhuraira, abdurehman ";
+        var sli = text.slice(0, 7);
+        //  ek zyada negetive value deni hoti or dusri kam
+        var sl = text.slice(-23, -13);
+        document.getElementById("div07").innerHTML = sli;    
+        document.getElementById("div08").innerHTML = sl;
+
+
+        // substring() is similar to slice(). The difference is that start and end values less than 0 are treated as 0 in substring().If you omit the second parameter, substring() will slice out the rest of the string.
+        var subs = "shaffan shaiq faiq haris ";
+        document.getElementById("div010").innerHTML = subs.substring(0, 7);
+
+
+        //substr() is similar to slice().The difference is that the second parameter specifies the length of the extracted part.If you omit the second parameter, substr() will slice out the rest of the string.If the first parameter is negative, the position counts from the end of the string.
+        var substr = "banana mango kiwi orange";
+        substr2 = substr.substr(0, 7);
+        document.getElementById("div010").innerHTML = substr2;
+        //   document.getElementById("div010").innerHTML=subs.substring(-6);
+
+
+        //A string is converted to upper case with toUpperCase():
+        function upcase() {
+            // var x = "hello how";
+            var x = document.getElementById("div012").innerHTML;
+            document.getElementById("div012").innerHTML = x.toUpperCase();
+        }
+
+        //A string is converted to lower case with toLowerCase():
+        function lowcase() {
+            // var x = "hello how";
+            var x = document.getElementById("div014").innerHTML;
+            document.getElementById("div014").innerHTML = x.toLowerCase();
+        }
+
+        //concat() joins two or more strings:The concat() method can be used instead of the plus operator. These two lines do the same:
+        // first method 
+        var con = "hello shaffan"
+        var cat = "how are you"
+        var concat = con.concat(" ", cat);
+        document.getElementById("div017").innerHTML = concat;
+
+        //second easy method
+        var con = "hello shaffan"
+        var cat = "how are you"
+        var concat = con + " " + cat;
+        document.getElementById("div018").innerHTML = concat;
+
+
+        //The trim() method removes whitespace from both sides of a string:
+
+        var t = "     shaffan trim    ";
+        var ts = "     shaffan trimstart    ";
+        var te = "     shaffan trimend    ";
+        console.log(t.trim());
+        console.log(ts.trimStart());
+        console.log(te.trimEnd());
+
+        //The padStart() method pads a string from the start.It pads a string with another string (multiple times) until it reaches a given length.
+        var pads = "hello"
+        var padstart = pads.padStart(15, "001");
+        document.getElementById("div021").innerHTML = padstart;
+        //   var pads="hello"
+        var padend = pads.padEnd(15, "001");
+        document.getElementById("div022").innerHTML = padend;
+
+        //he repeat() method returns a string with a number of copies of a string.The repeat() method returns a new string.The repeat() method does not change the original string.repeat() is not supported in Internet Explorer.
+        var rep = "hello how are you ";
+        var repeat = rep.repeat(10);
+        document.getElementById("div024").innerHTML = repeat;
+
+
+        //The replace() method replaces a specified value with another value in a string:The replace() method does not change the string it is called on.The replace() method returns a new string.The replace() method replaces only the first matchIf you want to replace all matches, use a regular expression with the /g flag set. See examples below.
+        var normal = "hello who are you";
+        var replace = normal.replace("who", "how");
+        var replace2 = normal.replace(/o/g, "hahah");
+        var replace3 = normal.replace(/ARE/i, "as");
+        document.getElementById("div026").innerHTML = normal;
+        document.getElementById("div027").innerHTML = replace;
+        document.getElementById("div028").innerHTML = replace2;
+        document.getElementById("div028").innerHTML = replace3;
+
+
+        //A string can be converted to an array with the split() method:If the separator is omitted, the returned array will contain the whole string in index [0].If the separator is "", the returned array will be an array of single characters:
+        var split1="hello,shaffan";
+        var split2=split1.split(",");
+        document.getElementById("div030").innerHTML=split2[0];
+    </script>
+</body>
+
+</html>

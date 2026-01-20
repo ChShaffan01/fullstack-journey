@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+     <!-- // settimeout sirf ek bar ho ga  -->
+    <button  onclick="y =setTimeout(fun1,3000)">1 time</button>
+
+    <!-- ye stop krta he liqin iske perametter me dosra ka name dalna hota he  -->
+     <button  onclick="clearTimeout(y)">stop it</button>
+
+    <!-- // setInterval reapet hota rahe ga 3 second bad ek 1000 mili second 1 sec hota he -->
+    <button  onclick="x = setInterval(fun2,3000)">loop</button>
+     
+     
+     <!-- ye stop krta he liqin iske perametter me dosra ka name dalna hota he  or ye setinterval ke liye axha he -->
+     <button  onclick="clearInterval(x)">stop it</button>
+
+     <button id="b1">stop it</button>
+
+    <script>
+
+        function fun1() {
+            alert("kiya kr rahe ho yaha ap");
+        }
+        
+        function fun2() {
+            alert("kiya kr rahe ho yaha ap");
+        } 
+       
+ var z = document.getElementById("b1");
+ z.addEventListener('click',fun3);
+
+
+function fun3() {
+    document.write("hello")
+}
+
+    </script>
+
+</body>
+</html>

@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<button id="div01" onclick="fun()";>console</button>
+<button id="div01" onclick="x(p1,p1)";>console</button>
+<body>
+    <script>
+        // "use strict" jawascript strict/sakhti kr deti he koi choti chez ki koi chez na ho ya variable yan let ya const na likha ho or sidha value di ho to phr error kare gi is me do type oti he ek global jo bhr sara kam karti he or dusri local hoti he for example mene fuction me ke andr dala ho phr ye sirf funtion me hi kam kare gi function se bhr nai
+
+        "use strict";//globally
+
+        // x = 10; // no strick ok doing work
+        // console.log(x);
+      
+        // y = 20;// use strict error type never define
+        // console.log(y);
+        
+        var z = 10;
+        console.log(z);
+        // delete z; is never working in use strict
+
+        function fun() {
+            "new strick"// local
+           var x = 21;
+            console.log(x);
+            
+        }
+        // error becaue perametter name is same strict mode never allowed same perametter names
+        // function x(p1,p1) {
+        //     let x =10
+        //     console.log(x);
+        // }; 
+
+
+// never allowed object value object value bahr di gai he ye bilkul allowed nahi krta sirf object ke andr hi de skte he
+
+//         const obj = {};
+// Object.defineProperty(obj, "x", {value:0, writable:false});
+
+// obj.x = 3.14; 
+
+
+// or important iske kuch keywords hote he wo var&let&const me nahi de skte wrna error kare ga 
+
+        
+    </script>
+</body>
+</html>

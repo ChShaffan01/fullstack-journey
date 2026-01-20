@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+<script>
+    
+    function setcookie(name,value,expire) {
+        var d = new Date();// new date mean object only date mean string
+        d.setTime(d.getTime() + expire * 24 * 60 * 60 * 1000);
+        var exp = "expire=" + d.toUTCString();
+        document.cookie = name + "=" + value + ";" + exp + ";path=/";
+        
+    }
+    function getcookie(params) {
+        var name = name+ "=";
+        var decodedcookie = decodeURIComponent(document.cookie);
+        var nam = decodedcookie.split(";");
+    for (let i = 0; i < nam.length; i++) {
+        let n = nam[i];
+        while (n.charAt(0) == ' ') {
+      n = n.substring(1);
+    }
+        if (n.indexOf(n) == 0) {
+            return n.substring(name.length,n.length);
+        }
+    }
+        return "";
+    }
+     function checkcookie() {
+        var username = getcookie("username");
+        if (username != "") {
+            alert("welcome again"+username);
+        }else{
+            username = prompt("please enter your name:","");
+        }
+        if (username != "" && username != null) {
+        setcookie("username",username,3)
+        }
+     }
+  checkcookie();
+
+  
+</script>
+</body>
+</html>

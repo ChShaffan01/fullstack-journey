@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // sort() sare alpha wors ko tartib se kr deta he asending order ki tarha like a,b,c,d....;
+        
+        var arr1 = ["mango","banana","orange","graps"];
+        arr1.sort();
+        console.log(arr1);
+        
+        // reverse() desending order ki tarha he sare alphawords ko ulta lata he like z,y,x,v,u.....; is type
+        var arr2 = ["mango2","banana2","orange2","graps2"];
+        arr2.reverse();
+        console.log(arr2);
+
+        // array sort a - b mean assending order ye digit ke liye kam krta he sirf numbers ko assendind arder me kr de ga
+        var arr3 = [10,30,4,9,28,9];
+        arr3.sort(function(a,b){return a - b });
+        console.log(arr3);
+
+        // sort decending order me convert krta he function ke perametter me a,b pass krna hota he or desending ke liye b-a krna hota he only number
+        var arr4 = [10,30,4,9,28,9];
+        arr4.sort(function(a,b){return b - a });
+        console.log(arr4);
+    </script>
+</body>
+</html>

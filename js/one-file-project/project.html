@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input id="inp1" type="text" > <br>
+    <input id="inp2" type="text" > <br>
+    <input id="inp3" type="text" disabled> <br>
+    <button onclick="fun1()">plus </button> <br>
+    <button onclick="fun2()"> minus</button> <br>
+
+    <script>
+        var x1 = document.getElementById("inp1");
+        var x2 = document.getElementById("inp2");
+        var x3 = document.getElementById("inp3");
+        function fun1() {
+        if ( Number===Number) {
+            var y = parseInt(x1.value) + parseInt(x2.value);
+            x3.value = y;
+         }
+           else{
+            var y = x1.value + x2.value;
+            x3.value = y;
+         }
+            
+        }
+         function fun2() {
+        if ( Number===Number) {
+            var y = x1.value - x2.value;
+            x3.value = y;
+        }
+        else{
+               var y = parseInt(x1.value) - parseInt(x2.value);
+            x3.value = y;
+         }
+            
+        }
+    </script>
+</body>
+</html>

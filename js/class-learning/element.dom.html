@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <div id="div1">how are you</div>
+    <div id="div01">how are you</div>
+    <div class="div2"></div>
+    <span></span>
+    <div class="div3" onclick="hel()">sss</div>
+    
+    <script>
+      var doc = document.getElementById("div01");
+      doc.innerHTML="hello how are you"; 
+
+      document.getElementById("div1").innerHTML = 'i am id method';
+        document.getElementsByClassName("div2")[0].innerHTML = "i am classname method";
+        document.getElementsByTagName("span")[0].innerHTML = "i am tagname method";
+       
+        function hel(){
+            document.write("hello i am write");
+        }
+
+        //The HTML DOM document object is the owner of all other objects in your web page.The document object represents your web page.If you want to access any element in an HTML page, you always start with accessing the document object.Below are some examples of how you can use the document object to access and manipulate HTML.
+
+       // This page teaches you how to find and access HTML elements in an HTML page.
+     //Finding HTML Elements
+     //Often, with JavaScript, you want to manipulate HTML elements.
+    //To do so, you have to find the elements first. There are several ways to do this:
+
+//    Finding HTML elements by id
+//    Finding HTML elements by tag name
+//    Finding HTML elements by class name
+//    Finding HTML elements by CSS selectors
+//    Finding HTML elements by HTML object collections
+    </script>
+</body>
+</html>

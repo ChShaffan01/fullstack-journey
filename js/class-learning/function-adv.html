@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <script>
+        var x = ["hello","hy","how","why",];
+        var y = ["see you latter","by","good","no",];
+
+        function vy(x,y) {
+            return x + y;
+        }
+      
+        console.log(vy(x,y));
+
+        
+// funtion call method
+        var per ={ fullname: function (){
+              return this.firstname +" "+this.lastname
+          }};
+        var per1 = {
+            firstname:"Choudhry",  lastname:"Shaffan" }
+               console.log( per.fullname.call(per1));
+
+               
+
+    </script>
+</body>
+</html>

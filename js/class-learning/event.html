@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .div{
+            width: 500px;
+        }
+    </style>
+</head>
+<body>
+    <div class="div">
+    <button id="div2" onclick="on1change()">hello</button>
+    <br><br>
+    <div id="div3" onmouseover="on3change()" >abhi mouse hover nahi howa sentance pe</div>
+    <br><br>
+    <div id="div4" onmouseout="on4change()">abhi out nahi howa mouse</div>
+    <br><br>
+    <div id="div3" onmouseover="on3change()" onmouseout="on4change()">yaha pe over or on mouse dono hoawa he cheack console.log()</div>
+    
+    <button id="div6">hello6</button>
+</div>
+</body>
+<script>
+   
+     
+    function on1change(){
+        document.getElementById("div2").innerHTML = 'click hogaya';
+    } 
+     function on3change(){
+        document.getElementById("div3").innerHTML = 'ho gaya mouse hower';
+        console.log('mouse hover howa');
+    } 
+     function on4change(){
+        document.getElementById("div4").innerHTML = 'mouse out howa sentence se';
+        console.log('mouse hover se out howa sentence se');
+    }
+    
+</script>
+</html>

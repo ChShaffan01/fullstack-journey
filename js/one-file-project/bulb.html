@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body id="body">
+    <div class="div1">
+        <img id="div1" src="img/pic_bulboff.gif">
+    </div>
+    <button id="b1"   onclick="document.getElementById('div1').src='img/pic2_bulbon.gif'">bulb on</button>
+    <button id="b2"  onclick="document.getElementById('div1').src='img/pic_bulboff.gif'">bulb of</button>
+    <script>
+       
+       document.getElementById('div1').style.display='flex';
+       document.getElementById('div1').style.margin='50px';
+       document.getElementById('b2').style.marginLeft='15px';
+       document.getElementById('b2').style.padding='5px';
+       document.getElementById('b1').style.padding='5px';
+       document.getElementById('b1').style.marginLeft='30px';
+    //    document.getElementById('body').style.backgroundColor='red';
+      
+    </script>
+</body>
+</html>

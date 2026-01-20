@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        .div1 {
+            text-align: center;
+            margin-top: 20px;
+            text-align: center;
+            margin-left: 400px;
+            border: 3px solid #000;
+            width: 600px;
+            border-radius: 50px;
+            height: 600px;
+            background-color: #2f7263;
+        }
+
+
+        /* input {
+            width: 450px;
+            margin-bottom: 2px;
+            height: 75px;
+            outline: none;
+            border-radius: 30px;
+            border: 4px solid #000000;
+            color: #000000;
+            font-size: 4em;
+            text-align: end;
+            margin-top: 50px;
+            padding-right: 20px;
+        } */
+
+        .button {
+            width: 100px;
+            margin: 5px;
+            border: 1px solid transparent;
+            border-radius: 30px;
+            font-size: 4em;
+            height: 100px;
+            box-shadow: 2px 2px 4px rgb(5, 5, 5);
+        }
+
+        .button:hover {
+            background-color: #98afb3;
+        }
+
+        .button:active {
+            background-color: #746f74;
+        }
+
+        .button::selection {
+            background-color: orange;
+            color: #fff;
+        }
+
+
+        #button1 {
+            background-color: orange;
+            color: #fff;
+        }
+
+        #button1:hover {
+            background-color: orangered;
+        }
+
+        #button1:active {
+            background-color: #977097;
+        }
+
+        #button2 {
+            background-color: orange;
+            color: #fff;
+        }
+
+        #button2:hover {
+            background-color: orangered;
+        }
+
+        #button2:active {
+            background-color: #977097;
+        }
+
+        #button3 {
+            background-color: orange;
+            color: #fff;
+
+        }
+
+        #button3:hover {
+            background-color: orangered;
+        }
+
+        #button3:active {
+            background-color: #977097;
+        }
+
+        sub::selection {
+            background-color: orange;
+
+        }
+
+        #button4 {
+            background-color: orange;
+            color: #fff;
+
+        }
+
+        #button4:hover {
+            background-color: orangered;
+        }
+
+        #button4:active {
+            background-color: #977097;
+        }
+
+        #button5 {
+            background-color: rgb(144, 236, 6);
+            color: #fff;
+        }
+
+        #button5:hover {
+            background-color: #a8ecec;
+            color: #000000;
+        }
+
+        #button5:active {
+            background-color: #c1d5e0;
+        }
+
+        #div001 {
+            width: 450px;
+            margin-bottom: 2px;
+            height: 75px;
+            overflow: hidden;
+            border-radius: 30px;
+            border: 4px solid #000000;
+
+            color: #000000;
+            font-size: 4em;
+            text-align: end;
+            margin-top: 50px;
+            /* margin-left: 70px; */
+            padding-right: 20px;
+            background-color: #cfd0ff;
+
+        }
+
+        #div001::selection {
+            background-color: rgb(255, 251, 0);
+
+        }
+
+        .bito {
+            background-color: rgb(231, 35, 35);
+            color: #fff;
+        }
+
+        .bito:hover {
+            background-color: rgb(216, 52, 52);
+        }
+
+        .bito:active {
+            background-color: #a82a2a;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="div1">
+        <!-- <input type="text" id="input" placeholder="0000"> -->
+        <input id="div001" value="000" disabled>
+        <br>
+        <button class="button" id="button01" onclick="fun('1')" ;>1</button>
+        <button class="button" id="button02" onclick="fun('2')" ;>2</button>
+        <button class="button" id="button03" onclick="fun('3')" ;>3</button>
+        <button class="button bito" id="button001" onclick="clear1()" ;>C</button>
+        <br>
+        <button class="button" id="button04" onclick="fun('4')" ;>4</button>
+        <button class="button" id="button05" onclick="fun('5')" ;>5</button>
+        <button class="button" id="button06" onclick="fun('6')" ;>6</button>
+        <button class="button" id="button1" onclick="fun('+')" ;>+</button>
+        <br>
+        <button class="button" id="button07" onclick="fun('7')" ;>7</button>
+        <button class="button" id="button08" onclick="fun('8')" ;>8</button>
+        <button class="button" id="button09" onclick="fun('9')" ;>9</button>
+        <button class="button" id="button2" onclick="fun('-')" ;>-</button>
+        <br>
+        <button class="button" id="button001" onclick="fun('0')" ;>0</button>
+        <button class="button" id="button3" onclick="fun('*')" ;><sub>*</sub></button>
+        <button class="button" id="button4" onclick="fun('/')" ;>/</button>
+        <button class="button" id="button5" onclick="evl()" ;>=</button>
+    </div>
+    <script>
+        function fun(pera) {
+            var value1 = document.getElementById("div001").value;
+            if (value1 == 0) {
+                var x = document.getElementById("div001").value = pera;
+            }
+            else {
+                var x = document.getElementById("div001").value += pera;
+       }
+        }
+        function clear1() {
+            var x = document.getElementById("div001").value = '';
+        }
+        function evl() {
+            var x2 = document.getElementById("div001");
+            x2.value = eval(x2.value);
+        }
+    </script>
+</body>
+
+</html>

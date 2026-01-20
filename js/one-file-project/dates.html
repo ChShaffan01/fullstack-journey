@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id="div1"></div>
+    <div id="div2"></div>
+    <div id="div3"></div>
+    <div id="div4"></div>
+    <div id="div5"></div>
+
+    <script>
+        var x = Date();
+        document.getElementById("div1").innerHTML = x;
+
+        document.getElementById("div2").innerHTML = new Date();
+
+        // ayse bhi ham de skte he liqin isme  month 0 se shuru hote he jyse jun 0 dec 11 
+        var y = new Date(2007,7,23,4,30,45);
+        document.getElementById("div3").innerHTML = y;
+
+  // ye milisecond me bhi value leta he q na ke jawascript 1970 se shuru hoi he is liye uske bad ye milisecond ka time shuru ho ga
+        var z = new Date(123211211223453); 
+        document.getElementById("div4").innerHTML = z;
+
+// agr - add kiya to ye 1970 se phele jay ga
+         var z = new Date(-123211211223453);
+        document.getElementById("div4").innerHTML = z;
+
+
+    </script>
+</body>
+</html>

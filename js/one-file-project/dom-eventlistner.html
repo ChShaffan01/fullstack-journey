@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <button id="div1">
+        hello how are you
+    </button>
+
+    <div id="div2">what is your name</div>
+    <div id="div3"></div>
+    <div id="div4"></div>
+    <div id="div5"></div>
+    <div id="div6">0.74844377</div>
+   
+
+    <script>
+        var x = document.getElementById("div1");
+        x.addEventListener("mouseout",function2);// 
+       x.addEventListener("mouseout",function2);
+        x.addEventListener("click",function1);// isme ek value ye deni hoti he element or dusri contant ya function
+        function function1() {
+            alert("i am fine");
+        }
+         function function2() {
+            alert("and you");
+        }
+
+
+        var y = document.getElementById("div2");
+        y.addEventListener("mouseover" ,function03);
+       var y2 = document.getElementById("div3");
+       function function03(){
+        y2.innerHTML = "my name is mouse over <br>"
+       }
+       var y = document.getElementById("div2");
+        y.addEventListener("mouseout" ,function04);
+       var y3 = document.getElementById("div4");
+       function function04(){
+        y3.innerHTML = "my name is mouse out <br>"
+       }
+       var y = document.getElementById("div2");
+        y.addEventListener("click" ,function05);
+       var y4 = document.getElementById("div5");
+       function function05(){
+        y4.innerHTML = "my name is click <br>"
+       }
+
+      var z = document.getElementById("div6");
+        window.addEventListener("resize" ,function07);
+       function function07(){
+        z.innerHTML = Math.random();
+       }
+
+
+
+ 
+
+
+        
+
+    </script>
+</body>
+</html>

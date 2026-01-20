@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <button onclick="fun1()">simple alert</button>
+    <button onclick="fun2()">confirm alert</button>
+    <button onclick="fun3()">prompt alert</button>
+    <button onclick="fun4()">prompt + defult</button>
+
+    <script>
+        function fun1() {
+            alert("wellcome")
+        }
+        function fun2() {
+           var y = confirm("you are 18 year old plz confirm");
+           console.log(y);
+        }
+         function fun3() {
+          var x =   prompt("what is your name");
+          console.log(x);
+        } 
+        function fun4() {
+          var x2 =   prompt("what is your name","ch shaffan");
+          console.log(x2);
+        }
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let key = prompt("enter the key: ");
+        let value = prompt("enter the value: ");
+        localStorage.setItem(key,value)
+        console.log(`the value is ${key} ${localStorage.getItem(key)}`)
+        if(key == 'name' || key == 'class'){
+            localStorage.removeItem(key)
+        }
+        if(key == 0){
+            localStorage.clear()
+        }
+         if(key != value){
+            localStorage.removeItem(key)
+        }
+    </script>
+</body>
+</html>

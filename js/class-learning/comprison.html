@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        x = 10;
+        y = 10;
+        y2 = x==y;// duble adition equal sing cheack same value then ture if value never equal value then false
+        y3 = x===y;// thriple equal sing cheack value + data type 
+        console.log(y2);
+        console.log(y3);
+        x2 = 10;
+        x3 = 30;
+        x4 = "30";
+        y4 = x2==x3;// value is never same false
+        y5 = x3===x4;// type is never same false
+        console.log(y4);
+        console.log(y5);
+
+        // != is not equal x01 x02
+        x01 = 10;
+        x02 = 20;
+        x03 = x01 !=x02;// is not equal
+        console.log(x03)//true
+        x04 = 10;
+        console.log(x01 != x04)//false
+        x05 ="10";
+        console.log(x04 !==x05)// true value is same but type is never same 
+        console.log(x04 !==x02)// true value is never same but type is same 
+
+        // grater > lessthen <  
+        g = 10;
+        g2 = 8;
+        console.log(g2 > g);// false q ke g ki value g2 se kam he
+        console.log(g > g2);// true g ki value g2 se zyada he
+        lt = 20;
+        lt2 = 15;
+        console.log(lt < lt2);// false q ke lt ki value lt2 se zyada he
+        console.log(lt2 < lt);//true lt2 ki value lt se kam he
+
+        //jb hm string ka less then ya grater then compare kare to string ka sirf first degit matter krta he 
+         gt  = "2";
+        gt2 = "10";
+        gt3 = "30";
+       // grater then
+        console.log(gt > gt2);// true 
+        console.log(gt2 > gt3);//false 
+       // less then
+        console.log(gt2 < gt);//true
+        console.log(gt3 < gt);//false
+        
+
+     
+        // oprater
+       // && and (x < 10 && y > 1) is true	
+      // ||	or	(x == 5 || y == 5) is false	
+      // !	not	!(x == y) is true
+      // ?. mean undefiend
+
+    </script>
+</body>
+</html>

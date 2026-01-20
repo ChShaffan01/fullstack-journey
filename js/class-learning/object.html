@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;padding: 0;box-sizing: border-box;
+        }
+        #div1{
+            /* margin-left: 200px; */
+            font-size: 4em;
+          font-weight: bold;
+          color: #fff;
+
+        }
+        body{
+            background-color: #749785;
+        }
+        button{
+          width: 300px;
+          /* padding: 40px; */
+          height: 100px;
+          color: aquamarine;
+          background-color: orange;
+          font-size: 2em;
+          font-weight: bold;
+
+        }
+       
+    </style>
+</head>
+<body>
+
+    <div id="div1">
+       mobile
+    </div>
+    <button onclick=" document.getElementById('div1').innerHTML= 'name:' + mobile.fun()";>company&model</button>
+    <button onclick=" document.getElementById('div1').innerHTML= 'Storage:' + mobile.Storage";>Storage</button>
+    <button onclick=" document.getElementById('div1').innerHTML= 'color:' + mobile.color";>color</button>
+    <br>
+    <button onclick=" document.getElementById('div1').innerHTML= 'condition:' + mobile.condition";>condition</button>
+    <button onclick=" document.getElementById('div1').innerHTML= 'battry:' + mobile.battry";>battry</button>
+    <button onclick=" document.getElementById('div1').innerHTML= 'price:' + mobile.price";>price</button>
+    <br>
+    <button onclick=" document.getElementById('div1').innerHTML= 'version:' + mobile.version";>version</button>
+    <script>
+        var  mobile = {
+             company : 'infinix',
+             model : 'note 12',
+             Storage : '128gbmemory/8gb ram',
+             color : 'golden',
+             condition : 'new',
+             battry : '5000mh + 48 ward',
+             price : '30000',
+             version : '11.0',
+             fun : function (){
+                return this.company+this.model;
+               
+            }
+        }
+            //sidha kor object function ko call krna
+
+        // document.getElementById("div1").innerHTML= mobile.fun();
+        
+
+                      // sath koi name bhi add krna apny pasand ka 
+
+        // document.getElementById("div1").innerHTML= 'name:' + mobile.fun();
+
+                    //   sidha kor object property ko call krna
+
+        // document.getElementById("div1").innerHTML= mobile.charger;
+
+        // document.getElementById("div1").innerHTML= mobile.color;
+    </script>
+</body>
+</html>

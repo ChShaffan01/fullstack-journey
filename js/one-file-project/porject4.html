@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+       body{
+     
+          display: flex;
+          justify-content: center;
+          margin-top: 250px;
+        }
+        #btn{
+            width: 100px;
+            padding: 10px;
+        }
+    </style>
+</head>
+<body>
+    <button id="btn" >click</button>
+    <script>
+        
+    // sab se phele ham ne ek function banaya usme x ko kuch number or alphaberd save kiye ye formate hexadicimal ka he phr ham ne c ko # declear kiya take har number ya aplha bird se phele ye lagay phr for loop banaya usme likha i = 0; or agr i chohta howa 6 se or i++ increament  phr hamne likha var c jisme hamne # save kiya tha wahi c ko kaha += zyada ya barabr ho var x jisme hamne value save ki thi uper x[Math.floor] ka mtlb he ke aghr value 1.233 ati he to isse bs 1 kr do agr 1.52 ya 1.65 yani 1.5 se uper value ay to usse 2 kr do phr x.[Math.floor(Math.random())] mtlb ke random number 1 ke andr koi bhi random value eleck krta he jyse 0.22333,0.4433,0.976655 etc phr x.[Math.floor(Math.random()*16)]; phr hamne kaha ke jo math.random se value create hoi he 1 ke andr andr usse hamare jo hamne x ko value di he uske index ke sath  multipliy kr le or ayse hi bar bar ek diffirent value genrate ho gi  phr ham ne c ko return kr liya function me 
+    
+      function fun1() {
+        var x = "0123456789ABCDEF";// 16 index
+        var c ="#";
+     for (let i = 0; i < 6; i++) {
+       c +=x[Math.floor(Math.random()*16)];
+        
+     }
+     return c;
+      } 
+
+      document.getElementById("btn").addEventListener("click",function()
+      {
+        document.body.style.backgroundColor = fun1();
+      });
+    </script>
+</body>
+</html>

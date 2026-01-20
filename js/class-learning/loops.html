@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id="div1"></div>
+    <script>
+        //for
+     //isme for or sath funtion brekit bana ke or us brekit me var name or value define krni hoti hee phr ek true value deni hoti he ke jab aysa ho phr loop hona phr increament kr ++ mean ek value plus krna phr function brekit close kr kr curly brekit me  batana hota he print ka
+      for (var x = 10; x <= 20; x++) {
+        console.log(x);
+      }
+ 
+
+      //   for in
+      //iske andr object or array bhi add kr skte he phele object banana hota he phr for me expration dalne hote he koi bhi var or value in add krke object name baqi ayse hi krna he or console ayse hi banana ho ga wrna error kare ga
+      var car ={name:"fortuner",color:"black",wheight:"470kg",model:"2024"}
+      for (var xy in car) {
+        if (Object.prototype.hasOwnProperty.call(car, xy)) {
+            const element = car[xy];
+            console.log(car[xy]);
+        }
+      }
+
+              // for of
+              // for of me easy ek array bana ke phr for var or value of add kr ke array name phr function brakit cloce kr ke curli brakit me console ya koi or print function dall ke var name ke zarye print kr le
+              var arr=["civic","fx","mehran","toyota","fortuner"];
+              for (var v of arr) {
+                console.log(v)
+              }
+
+
+              // while me sirf condition deni hoti phr print or uske bad increment
+              w = 7;
+              while (w <= 10) {
+                console.log(w);
+                w++;
+                
+              }
+
+            //   w2 = 7;
+            //   while (w2 > 10) {
+            //     console.log(w22);
+            //     w2++;
+                
+            //   }
+
+            // do while do matlb work kare while matlb jab tk condition true he 
+        dow = 1;
+        do {
+            console.log(dow);
+            dow++;
+        } while (dow <= 5);
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // jason formate 
+       var info = '{"hello":['+
+        '{ "username":"shaffan","fname":"ch ilyas"},'+
+        '{ "username":"HARIS","fname":"ch ilyas"},'+
+        '{ "username":"shaiq","fname":"ch idress"},]}';
+
+        // object formate
+        var x = {
+            name:"shaffan",fname:"ch ilyas"
+        };
+
+        //string formate
+        var user1='{"username":"shaffan","fname":"ch ilyas"}';
+      //  console.log(info);
+
+// jab ham server ko request krte he kisi bhi chez ke liye chahe wo youtube me koi video q na ho to ham server ko object ki shaqal me request krte he or server hamme string ki shakal me data deta he 
+
+      // object ko string me convert krta he ye server side ka he
+      var str = JSON.stringify(x);
+      console.log(str);
+
+// string ko object me convert krta he client side
+      var obj = JSON.parse(user1);
+      console.log(obj); 
+       
+      // full json convert to string 
+      var jsontostring = JSON.stringify(info);
+      console.log(jsontostring);
+    </script>
+</body>
+</html>

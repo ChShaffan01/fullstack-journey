@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <button onclick="as()">assign link open</button>
+    <script>
+        // location define krta he
+       var h = window.location.href;
+       console.log(h);
+
+
+       var hn = window.location.hostname;
+       console.log( "host name : 127 mean local "+hn);
+
+// file name return krta he
+       var pn = window.location.pathname;
+       console.log("vs code file name print : "+pn);
+
+// returns the web protocol used (http: or https:)
+       var prot = window.location.protocol;
+       console.log("returns the web protocol used (http: or https:) : "+prot);
+
+     
+
+       // dosri link yaha dal skte he global or local dono best tariqa he
+       function as(){
+        window.location.assign("https://www.w3schools.com")
+       }
+
+    </script>
+</body>
+</html>

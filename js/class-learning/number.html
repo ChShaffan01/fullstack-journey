@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        x = 10; // number type
+        console.log(typeof x);
+
+
+        y = 999999999999999; //ayse value 15 degit ki de skte he agr ayse zyada di to value ghalat a skti he 15 phele or . ke bad 17 degit vaue
+        console.log(y);
+        y2 = 9999999999999999;
+        console.log(y2);
+
+
+        var m = (5+2-0.3*10)/20;
+        console.log(m) ;
+
+        var s = 10;
+        var s2 = 20;
+        var s3 = "resut is"+10+30; // agr kahi bhi phele string a gaya to wo string hi ho ga
+        console.log(s3);
+
+
+        var n = 100;//number
+        var s2 = "100"// string
+        
+        
+        var nd = "100";
+        var sd2 = "10";
+        var nd3 =  "100"/"10"; // agr string number degitme howa to calculate ho jay ga
+        // var nd3 =  nd / nd2; // agr string number degitme howa to calculate ho jay ga
+        console.log(nd3);
+
+
+
+        var nd4 = "100"+"shaffan"; // concat is working only + adition sing
+        var nd4 = "100"*"shaffan"; // NAN is not working * / - is NAN mean not a number
+        console.log(nd4);
+        //isNaN(nd4) true
+
+        var x2= NaN;
+        var x3 = 5;
+        var x4 = x2 + x3; // agr nan ke sath number aya to wo NAN ho ga
+        console.log(x4);
+    
+        var x5 = NaN;
+        var x6 = "5";
+        var x7 = x5 + x6;// string add NANconcat5 NAN5
+        console.log(x7);
+
+        var x8 = 2/0; 
+        var x9 = -2/0;
+        console.log(x8);// typeof infinity agr koi chez ham 0 ke sath divied krte he to zero genrate hota he
+        console.log(x9);// agr -ke sath 0 divied kiya to -infinity type ho jay ga
+
+
+       var st = 100; // typeof number
+       var st2 = st.toString();// ye number ko string me convert kr deta he type of string
+        console.log(st2);
+
+        var ob1 = 100;//number
+        var ob2 = (100);//object
+        console.log(ob1==ob2);
+
+                 //    NUMBER METHOD
+              // point se phiche intiger hota he or jaha se point shuru hota he or a ge point ki jitni bhi value ho wo parseFloat hoti he
+        var num = 8.8939373937;
+        var num2 = num.toExponential(0); // ye exponential jo he ya ap perametter me jini value pass karo ge ye utne degit of number laga de ga for example yaha 0 lagai ho ge q ke perametter me 0value pass he
+        var num3 = num.toExponential(3);
+        var num4 = num.toExponential(5);
+        var num5 = num.toExponential(10);
+        console.log(num2);
+        console.log(num3);
+        console.log(num4);
+        console.log(num5);
+
+        // fixed rounds giving degits last me orignal value ke age 000000 dalta jata he jitne digit ka perametter  me pass hoi ho ge
+        var num6 = 2.890;
+        var num7 = num.toFixed(3);
+        var num8 = num.toFixed(5);
+        var num9 = num.toFixed(7);
+        var num10 = num.toFixed(10);
+        console.log(num7);
+        console.log(num8);
+        console.log(num9);
+        console.log(num10);
+       
+
+        // parseint() sirf first value leta he
+       var x001= parseInt("-10") 
+        x002 = parseInt("-10.33") 
+        x002 = parseInt("10") 
+        x003 = parseInt("10.33") 
+        x004 = parseInt("10 6") 
+        x005 = parseInt("10 years")   
+        x006 = parseInt("years 10");  
+  console.log(x001);
+  console.log(x002);
+  console.log(x003);
+  console.log(x004);
+  console.log(x005);
+  console.log(x006);
+
+        </script>
+
+</body>
+</html>

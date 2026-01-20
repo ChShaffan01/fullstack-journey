@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    body{
+        text-align: center;
+        background-color: #84e6b8;
+    }
+    button{
+        padding: 10px 30px;
+    }
+</style>
+
+<body>
+    <div id="div1">
+   there is HTML
+    </div>
+    <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium, sint. Impedit cupiditate sunt voluptate, sint ea minima maxime amet facere, repudiandae quos accusantium! Doloremque dignissimos debitis eos ea quaerat consequatur?
+
+    </p>
+   <!-- agr yaha click kare ge to baki sab ghaib ho jai ga or jo document-write likha ho ga wahi show ho ga -->
+
+    <button onclick=" document.write('there is shaffan');">click here</button>
+
+
+              <!-- agr koi value plus kr rahe ho to assigment opreater = nahi dale ge -->
+
+    <button onclick=" document.write(10+9+21+15+6+9);">number value</button>
+
+
+    <br><br>
+            <!-- system ki tarf se alert a msg show ho ga  -->
+
+    <button onclick="window.alert('alert you are hacked')">alert</button>
+   
+
+    <button onclick="window.alert(20+19+10+12+17+13)">number value</button>
+    <br><br>
+                   <!-- agr page print krna ho -->
+    <button onclick="window.print()">window print</button>
+    <script>
+        //first mehthod innerHTML simple  change html file contant
+        document.getElementById("div1").innerHTML='there is js';
+        document.getElementById("div1").style.fontSize="3em";
+
+      // agr koi value plus kr rahe ho to assigment opreater =  dale ge// 
+        document.getElementById("div1").innerHTML = 10 + 20;
+
+       //console.log wo inspect ke throw backend kam hota he//
+                 // console.log(50+23);//
+    </script>
+</body>
+</html>

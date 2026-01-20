@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+     
+       .div02{
+        margin-top: 200px;
+        display: flex;
+        text-align: center;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+       
+       }
+       .div01{
+        background-color: #333;
+        font-size: 2em;
+        font-weight: bold;
+        color: #fff;
+
+       }
+       button{
+        margin-top: 50px;
+        width: 130px;
+        font-size: 1.2em;
+        height: 35px;
+        background-color: transparent;
+        border-radius: 15px;
+       }
+    </style>
+</head>
+<body id="div1">
+    <div class="div02">
+        <div class="div01">Background Color :</div>
+    <button onclick="fun()">Click Me</button></div>
+    <script>
+     var arr =["red","green","blue",];
+     var arrindex = 0;
+    function fun(){
+    var x =  document.getElementById("div1");
+    x.style.backgroundColor = arr[arrindex];
+    arrindex = (arrindex + 1) & arr.length;
+}
+ 
+  
+    </script>
+</body>
+
+</html>
