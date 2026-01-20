@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;padding: 0;box-sizing: border-box;
+        }
+        .father{
+            position: relative;
+            display:inline-block;
+        }
+        .div1{
+            text-align: center;
+            /* padding: 50px; */
+            background-color: #55e6cd;
+            position: absolute;
+        }
+        .father:hover .div2 {
+            display: block;
+            color: beige;
+        }
+        .div2{
+            display: none;
+             position: relative;
+             background-color: #f9f9f9;
+  
+           box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+            padding: 12px 16px;
+        }
+    </style>
+</head>
+<body>
+    <div class="father">
+        <div class="div1">home</div>
+        <div class="div2">
+    <a href="#">home</a>
+    <a href="#">contact</a>
+    <a href="#">about</a>
+    <a href="#">services</a>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* var */
+        :root{
+            --color: #333;
+            --bgc:blue;
+            --texshadow: 2px 2px 5px red;
+        }
+        *{
+            margin: 0ppx;
+            padding: 0px;
+            box-sizing: border-box;
+        }
+        .box1{
+            color: var(--color);
+            background-color: var(--bgc);
+            text-shadow: var(--texshadow);
+            width: 400px;
+            height: 200px;
+            text-align: center;
+            margin-left: 450px;
+            margin-top: 100px;
+        }
+        ::selection{
+            background-color: orange;
+        }
+    </style>
+</head>
+<body>
+    <div class="box1">
+        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Saepe aperiam nulla odio id fugiat, iure iste. Exercitationem, cupiditate id! Quaerat tempora deleniti ut nemo numquam quis culpa vero iste repellat?
+    </div>
+</body>
+</html>

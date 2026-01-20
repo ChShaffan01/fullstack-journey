@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+    *{
+     margin: 0px;
+     padding: 0px;
+     box-sizing: border-box;
+    }
+    body{
+        width: 100%;
+        height: 100%;
+        background-color: black;
+    }
+    .animation{
+        color: transparent;
+        border: 5px solid transparent;
+        padding: 50px;
+        text-align: center;
+        position: absolute;
+        left: 800px;
+        top: 100px;
+        border-radius: 100px;
+        animation-name: jumpingball;
+        animation-duration: 3s;
+        animation-delay: 2s;
+        animation-iteration-count: infinite;
+        animation-timing-function: ease;
+        box-shadow: 2px 2px 30px rgb(255, 255, 255);
+        overflow: hidden;
+        
+    }
+    @keyframes jumpingball{
+        0%{
+            background: rgb(255, 50, 221) ;
+            top: 500px;
+        }
+       
+        25%{
+            background: rgb(187, 255, 0) ;
+        top:100px;
+        }
+        50%{
+            background: rgb(35, 255, 237);
+            top:500px;
+        }
+        75%{
+            background: rgb(56, 255, 162);
+            top:100px;
+        }
+        100%{
+            background: rgb(236, 33, 255);
+            top:500px;
+        }
+    }
+</style>
+</head>
+<body>
+    <div class="animation">
+        hello
+    </div>
+    
+</body>
+</html>

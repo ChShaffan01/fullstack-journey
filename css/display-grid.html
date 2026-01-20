@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{margin: 0;
+            padding: 0;
+            box-sizing: border-box;}
+            body{
+                background-color: orange;
+
+            }
+            .father{
+                display: grid;
+                gap: 5px;
+                margin-top: 2px;
+                grid-template-columns: auto auto auto;
+                text-align: center;
+            }
+            .childs{
+                background-color: dodgerblue;
+                width: 950px;
+                height: 100px;
+                align-content: center;
+                font-size: 1.5em;
+                flex-grow: 30;
+
+                
+            }
+            #child{
+              width: 100%;
+              font-size: 2em;
+              text-align: center;
+            }
+            #main{
+                width: 200px;
+                height: 100px;
+                background-color: #32b34e;
+                align-content: end;
+                gap: 0px;
+                margin-bottom: 2px;
+                align-content: center;
+                font-size: 1.5em;
+                flex-grow: 1;
+            }
+           
+    </style>
+</head>
+<body>
+    <div class="childs" id="child">header</div>
+    <div class="father">
+        <div class="childs" id="main">main</div>
+        <div class="childs">contant</div>
+        <div class="childs" id="main">side</div>
+        <div class="childs" id="main">main</div>
+        <div class="childs">contant</div>
+        <div class="childs" id="main">side</div>
+        <div class="childs" id="main">main</div>
+        <div class="childs">contant</div>
+        <div class="childs" id="main">side</div>
+        <!-- <div class="childs" id="main">11</div> -->
+    </div>
+    <div class="childs" id="child" style="background-color: rgb(124, 118, 112);">footer</div>
+</body>
+</html>

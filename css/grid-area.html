@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+           margin: 0;padding: 0; box-sizing: border-box;
+        }
+        .head{
+            text-align: center;
+            padding: 50px;
+            grid-area: head;
+            font-size: 3em;
+            background-color: #bee3e5;
+
+        }
+        footer{
+            text-align: center;
+            padding: 50px;
+            grid-area: footer;
+            font-size: 3em;
+            background-color: #f1c9c9;
+        }
+        .nav{
+            grid-area: nav;
+            background-color: #705252;
+            padding: 30px;
+            font-size: 2em;
+            text-align: center;
+            color: #fff;
+        }
+      
+        .main{
+            grid-area: main;
+            background-color: #75e29f;
+            height: 90vh;
+            padding: 10px;
+            font-size: 2em;
+            position: relative;
+        }
+        .div1{
+            display: inline-block;
+            position: relative;
+            background-color: #eeb35c;
+            
+            font-size: 3em;
+        }
+        .div1:hover .side{
+            display: block;
+        }
+        
+          
+            
+        
+        .side{
+            display: none;
+            position: relative;
+            grid-area: side;
+            background-color: #e4c952;
+            height: 81vh;
+            font-size: 2em;
+            width: auto;
+            text-align: center;
+  
+        }
+        a{
+            text-decoration: none;
+            color:#fff;
+        }
+        body{
+            display: grid;
+            grid-template-areas: 'head head head head''nav nav nav nav''side main main main''footer footer footer footer';
+        }
+    </style>
+</head>
+<body>
+    <header class="head">
+        header
+    </header>
+    
+    <nav class="nav">
+       <a href="#">home</a>
+       <a href="#">about</a>
+       <a href="#">contact</a>
+       <a href="#">services</a>
+    </nav>
+    <div class="div1">
+        <div class="div2">&#8800;</div>
+    <aside class="side">
+       <div> <a href="#">home</a></div>
+     <div>   <a href="#">about</a></div>
+     <div>   <a href="#">contact</a></div>
+     <div>   <a href="#">services</a></div>
+    </aside></div>
+<main class="main">
+    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Tempore ea beatae delectus recusandae eligendi, vitae nobis ex nostrum nisi officiis tenetur aut necessitatibus repellendus, reprehenderit tempora blanditiis quis fugit laudantium.
+</main>
+<footer>
+         footer
+</footer>
+</body>
+</html>

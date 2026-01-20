@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+
+        }
+        body{
+            display: flex;
+           box-sizing: border-box;
+           background-color: rgb(255, 109, 4);
+           opacity: 0.9;
+        }
+       
+        .div0{
+            
+            background-color: rgb(226, 152, 248);
+           width: 30%;
+            margin: 200px auto;
+            padding: 5px;
+            border: 15px solid transparent;
+            border-image: url("border.png") 30 stretch ;
+            border-image-outset: 5px;
+            text-align: center;
+        }
+       
+        .div1{
+            background-color: rgb(137, 202, 6);
+           width: 30%;
+            margin: 200px auto;
+            padding: 5px;
+            border: 15px solid transparent;
+            border-image: url("border.png") 30 stretch ;
+            border-image-outset: 5px;
+            text-align: center;
+            
+           
+        }
+        .div1:hover{
+            transform: translate(15px,15px);
+            border-radius: 20px;
+          
+        }
+        .div2{
+            background-color: rgb(23, 250, 125);
+           width: 30%;
+            margin: 200px auto;
+            padding: 5px;
+            border: 15px solid transparent;
+            border-image: url("border.png") 30 stretch ;
+            border-image-outset: 5px;
+            text-align: center;
+            
+           
+        }
+        .div2:hover{
+            
+            transform: rotate(-30deg);
+            border-radius: 20px;
+
+          
+        }
+        .div3{
+            background-color: rgb(242, 230, 5);
+           width: 30%;
+            margin: 200px auto;
+            padding: 5px;
+            border: 15px solid transparent;
+            border-image: url("border.png") 30 stretch ;
+            border-image-outset: 5px;
+            text-align: center;
+           
+           
+        }
+        .div3:hover{
+           
+            transform: rotate(30deg);
+            border-radius: 20px;
+          
+        }
+        .div4{
+            background-color: rgb(240, 66, 130);
+           width: 30%;
+            margin: 200px auto;
+            padding: 5px;
+            border: 15px solid transparent;
+            border-image: url("border.png") 30 stretch ;
+            border-image-outset: 5px;
+            text-align: center;
+           
+           
+        }
+        .div4:hover{
+           
+            transform: scale(2,2);
+            border-radius: 20px;
+            
+        }
+        .div5{
+            background-color: rgb(244, 108, 108);
+            width: 30%;
+            margin: 200px auto;
+            padding: 5px;
+            border: 15px solid transparent;
+            border-image: url("border.png") 30 stretch ;
+            border-image-outset: 5px;
+            text-align: center;
+            
+            
+        }
+        .div5:hover{
+            /* skew or rotate also same */
+           
+            transform: skew(15deg,10deg);
+            border-radius: 20px;
+        }
+        .div6{
+            background-color: rgb(240, 93, 236);
+            color: black;
+           width: 30%;
+            margin: 200px auto;
+            padding: 5px;
+            border: 15px solid transparent;
+            border-image: url("border.png") 30 stretch ;
+            border-image-outset: 5px;
+            text-align: center;
+            
+           
+           
+        }
+        .div6:hover{ 
+           
+            transform: matrix(1.5,0.5,-0.5,1.5,30,30);
+            border-radius: 20px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="div0">
+
+        Simple
+
+    </div>  
+    
+    <div class="div1">
+
+       transform translate
+       (x 15px,y 15px);
+
+    </div>
+      <div class="div2">
+
+       transform -rotate
+       (-30deg)
+
+    </div>  
+      <div class="div3">
+        transform rotate(30deg)
+        
+
+    </div> 
+       <div class="div4">
+
+      transform scale
+      (x 2 y 2)
+
+    </div>  
+      <div class="div5">
+      transform skew (x 15deg y 10deg)
+    </div>  
+    <div class="div6">
+        matrix  (scx,sky,skx,scy,trnx,trany)(1.5,0.5,-0.5,1.5,30,30)
+        
+
+    </div>
+</body>
+
+</html>
