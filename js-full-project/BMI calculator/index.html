@@ -1,0 +1,192 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+<link rel="stylesheet" href="style/style.css">
+<title>BMI Calculator</title>
+</head>
+<body>
+<!-- ------------------------------------------------------------------------------------------------ -->
+
+<header>
+     <nav>
+        <span>C<sub>S_</sub><i>F</i>orge</span>
+  <ul>
+      <li><a href="#home">Home</a></li>  
+       <li class="nav-item dropdown">
+ <a class=" dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+ Calculators
+ </a>
+ <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+ <a onclick =  'alert("BMI Calculator is under construction. Check back soon!");'  class="dropdown-item" href="#">Deit Calculate</a>
+ <a onclick =  'alert("BMI Calculator is under construction. Check back soon!");'  class="dropdown-item" href="#">Kg to Lbs</a>
+ <a onclick =  'alert("BMI Calculator is under construction. Check back soon!");'  class="dropdown-item" href="#">Foot to Cm</a>
+
+
+ </div>
+      <li><a href="#contact">Contact</a></li> 
+      </ul>
+    
+ <form class="search_form">
+ <input type="search" class="hinp" placeholder="Search your food">
+        <button onclick =  'alert("BMI Calculator is under construction. Check back soon!");'  class="hbtn" type="submit"><i class="fa-solid fa-magnifying-glass"></i></button>
+ </form>
+ </div>
+ </nav>
+    </nav>
+</header>
+
+<section class="s1">
+ <img src="icon/kcal_png.webp" alt="Something Wrong" width="100px" height="100px">
+
+</section>
+<section class="s2">
+    
+        <h1>Daily Calorie Intake Calculator</h1>
+        <h5>Feel free to enter your information below in the Daily Calorie Intake calculator to receive your personal current daily calorie intake, and what your body needs to fuel itself during the day with your routine!</h5>
+
+</section>
+<form action="#">
+<section class="s3">
+
+    <div class="s3d1">
+        <div class="s3d2">
+            <div class="s3d4">
+          <img src="icon/number-1.png" alt="" width="30px" height="30px"></div>
+          <h3>What is your gender?</h3>
+          <div class="s3d3">
+            <img src="icon/male_avtar.png" alt="" width="80px" height="80px" style="margin-right: 30px;">
+            <img src="icon/female_avtar.png" alt="" width="80px" height="80px" style="margin-left: 20px;">
+          </div>
+          <button onclick="male()" id="b1" class="bt01" >Male</button><button onclick="female()" class="bt01" id="b2" >Female</button>
+
+        </div>
+          <div class="s3d2">
+            <div class="s3d4">
+          <img src="icon/number-2.png" alt="" width="30px" height="30px"></div>
+          <h3>How old are you?</h3>
+          <div class="s3d5">
+            <input id="age" type="number" placeholder="18" required> Years
+          </div>
+
+
+        </div>
+    </div>
+    <div class="s3d1">
+             <div id="height_cm" class="s3d2">
+            <div class="s3d4">
+          <img src="icon/number-3.png" alt="" width="30px" height="30px"></div>
+          <h3>How tall are you?</h3>
+          <div class="s3d5">
+            <input id="cm" type="number" placeholder="170" required> cm
+          </div>
+          <button id="b3"  class="b1">Cm</button><button  onclick="height__ft()" id="b03" class="b1">ft/in</button>
+        </div> 
+        <div id="height_ft" class="s3d2">
+           <div class="s3d4">
+          <img src="icon/number-3.png" alt="" width="30px" height="30px"></div>
+          <h3>How tall are you?</h3>
+          <div class="s3d5">
+            <input id="ftinp" type="number" placeholder="6" required> ft  <input id="incinp"  type="number" placeholder="7" required>  in
+          </div>
+          <button onclick="height__cm()" class="b1">Cm</button><button id="b5"  class="b1">ft/in</button>
+        </div>
+             <div class="s3d2">
+            <div class="s3d4">
+          <img src="icon/number-4.png" alt="" width="30px" height="30px"></div>
+          <h3>How much do you weight?</h3>
+          <div  class="s3d5">
+            <input id="weight_value"   type="number" placeholder="60" required> <span id="weight">kg </span>
+          </div>
+          <button id="b6" onclick="weight_kg()" class="b1">kg</button><button id="b7" onclick="weight_lbs()" class="b1">lbs</button>
+        </div>
+    </div>
+
+    <div class="s3d6">
+        <img class="s3d6img" src="icon/number-5.png" alt="" width="30px" height="30px">
+          <h3>How active are you on daily basis?</h3><br>
+          <div class="s3d8">
+          <div class="s3d7">
+            <img src="icon/avatar_1.webp" alt="" width="100px" height="100px"><br>
+            <button id="b8" class="b2 bt02" onclick="lightlyA()">Lightly active</button>
+          </div>
+          <div class="s3d7">
+            <img src="icon/avatar_2.png" alt="" width="100px" height="100px"><br>
+            <button id="b9" class="b2 bt02" onclick="moderateA()">Moderately active</button>
+          </div>
+          <div class="s3d7">
+            <img src="icon/avatar_3.jpg" alt="" width="100px" height="100px"><br>
+            <button id="b10" class="b2 bt02" onclick="activeA()">Active</button>
+          </div>
+          <div class="s3d7">
+            <img src="icon/avatar_4.webp" alt="" width="100px" height="100px"><br>
+            <button id="b11" class="b2 bt02" onclick="veryA()">Very Active</button><br><br>
+          </div> 
+</div>
+    </div>
+    <div class="s3d9">
+        <button type="button"  id="btnmain">Calculate your needed calorie intake</button>
+       
+    </div>
+</section>
+</form>
+
+<section class="s4">
+  <p>By using this calculator for your caloric needs, this equation factors in your gender, age, height, current weight, and exercise levels. The resulting number will then be your daily calorie intake recommended for your lifestyle, where you can then adjust this to lose weight, gain weight, or maintain things where they are weight-wise. For a mathematical visual, the formula is the following for women, where the BMI is calculated as 655.1 + (9.563 x weight in kg) + (1.850 x height in cm) - (4.676 x age in years), and for men, BMR = 66.47 + (13.75 x weight in kg) + (5.003 x height in cm) - (6.755 x age in years). This is then multiplied by your activity level, with Sedentary as BMR x 1.2, Lightly active as BMR x 1.375, Moderately active as BMR x 1.55, Active as BMR x 1.725, and finally very active is calculated by the BMR x 1.9. 
+<br><br>
+As you can see from these calculations, the intensity of exercise levels that play into this also has its spectrum. The lightest active level exercise levels would be categorized as mostly sitting the majority of the day such as office work. The next level as someone who is moderately active would be someone who is mostly standing during the day such as working as a teacher or cashier as their profession. Active individuals would be categorized as mostly walking during the day such as a sales representative or server, and a very active level would look like a physically active day such as a builder.
+<br><br>
+As mentioned, another factor that comes into play with your daily calorie intake is your weight goal itself. If you are currently aiming to lose weight, the calculator will show you a prediction of losing 1 to 2 lb per week. For maintenance, this may be a goal you want to aim for with just keeping your current body weight, or when you’ve reached your goal weight. The goal weight calculation will also show a healthy weight gain of 1 to 2 lb per week. On average, women will need anywhere from 1,800 to 2,400 calories to maintain their weight, while men will need on average 2,400 to 3,000 calories per day to keep their weight where it is. There will be individual factors that play into this, but as a general overview, this can help determine where to keep, add, or subtract calories to reach your wellness goals</p>
+</section>
+
+
+
+<section class="s5">
+
+<div class="s5d1">
+  <h2>Free Weight_loss App</h2><br>
+  <p>Reach and maintain your ideal weight with <br>your personalized plan.</p>
+  <button onclick =  'alert("BMI Calculator is under construction. Check back soon!");' >Create My Plan</button>
+</div>
+<div class="s5d2">
+  <img src="img/side_img.png" alt="bugs" width="500px">
+</div>
+
+
+
+</section>
+
+
+
+<footer>
+
+<div></div>
+<pre>&#169; 2025 Victorious.All Rights Reserved.  |  Privacy Policy  |  Term of Use  |  Designed By CH-SHAFFAN</pre>
+
+</footer>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- ---------------------------------------------------------------------------------------------------->
+
+    <script src="js/button.js"></script>
+    <script src="js/height.js"></script>
+    <script type="module" src="js/index.js"></script>
+<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+</body>
+</html>

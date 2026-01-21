@@ -1,0 +1,391 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+body{
+    height: 100vh;
+    width: 98.5vw;
+    background-color: rgb(4, 10, 36);
+    /* background-color: #000; */
+}
+body::selection{
+    background-color: red;
+}
+
+header{
+    color: #fff;
+    background-image: url(../img/mee7.jpg);
+     background-repeat: no-repeat;
+    background-size: cover;
+    /* margin-top: -20px; */
+    height: 580px;
+    width: 100%;
+    
+  
+}
+.s1>div>h2>.s1s1{
+        
+        color: tomato;
+}
+header>nav{
+    display: flex;justify-content: space-between;
+    margin: 20px;
+}
+nav{
+    font-size: 20px;
+    margin-top: 5px;
+}
+nav>span>sub , span>i{
+    color: tomato;
+}
+nav>span , span>sub{
+    /* font-weight: bolder; */
+    font-size: 25px;
+    font-style: italic;
+    padding: 2px;
+    text-shadow: 1px 1px 2px ghostwhite;
+
+}
+nav>span {
+    margin-left: 30px;
+}
+nav>ul{
+    list-style: none;
+    text-decoration: none;
+    display: flex;
+    
+}
+nav>ul>li>a{
+    padding: 5px;
+    margin: 10px;
+    color: #fff;
+    text-shadow: 1px 1px 2px ghostwhite;
+}
+ul>li>a:hover{
+    text-decoration: none;
+    color: tomato;
+    transition: 1s;
+}
+.s1{
+    margin-top: 120px;
+    font-family: Arial, Helvetica, sans-serif;
+    display: flex;
+    justify-content: space-between;
+}
+.s1>div>h1,.s1>div>h2,.s1>div>button{
+    margin-left: 80px;
+
+}
+.s1d1{
+    width: 110px;
+    border-bottom: 1px solid tomato;
+    margin-top: 50px;
+   
+}
+.s1>div>p{
+    margin-left: 120px;
+    font-size: 40px;
+    margin-top: -45px;
+}
+#s1b1{
+    padding: 10px;
+    background-color: tomato;
+    color: #fff;
+    border: 2px solid tomato;
+    box-shadow: 0.5px 0.5px 3px ghostwhite;
+    width: 150px;
+    margin:  40px 3px 10px 70px;
+}
+#s1b2{
+    padding: 10px;
+    background-color: transparent;
+    color: #fff;
+    border: 2px solid tomato;
+    width: 150px;
+    box-shadow: 0.5px 0.5px 3px ghostwhite;
+    margin:  40px 3px 10px 5px;
+}
+#s1b1:hover{
+     background-color: transparent;
+     transition: 1s;
+}
+#s1b2:hover{
+background-color: tomato;
+     transition: 1s;
+}
+.s1>div>h2{
+    font-size: 50px;
+}
+.s1>div>h1{
+    font-size: 55px;
+}
+.s1>div>img{
+    margin-top: -50px;
+    margin-right: 100px;
+}
+.s2{
+    display: flex;
+    justify-content: space-around;
+    margin-top: 80px;
+    background-color: rgb(49, 46, 46);
+    color: darkgrey;
+    list-style: none;
+    font-size: 27px;
+    padding: 15px;
+}
+.s2>li:hover{
+    color: #fff;
+    
+    transition: 1s;
+}
+.s3{
+    margin-top: 150px;
+    display: flex;
+    color: #fff;
+}
+.s3d00{
+    width: 400px;
+    padding: 10px;
+    margin-left: 100px;
+}
+.s3d1>p{
+      margin-top: 30px;
+}
+.s3img>p>img{
+    margin: 20px;
+}
+.s3d02{
+    width: 450px;
+    margin-left: 150px;
+    text-align: justify;
+    margin-top: 30px;
+
+}
+.s3d4{
+    display: flex;
+    margin-top: 50px;
+
+}
+.s3d1{
+    height: 70px;
+    border-left: 2px solid rgb(255, 197, 71);
+    margin-top: 30px;
+}
+.s3d2{
+    height: 70px;
+    border-left: 2px solid rgb(255, 197, 71);
+    margin-top: 30px;
+}
+.s3d3{
+    height: 70px;
+    border-left: 2px solid rgb(255, 197, 71);
+    margin-top: 30px;
+}
+.s3d6{
+   margin-left: 100px;
+   
+}
+.s3d5>h2>span,.s3d6>h2>span{
+    color: tomato;
+    
+}
+.s3d5>h2,.s3d6>h2{
+      font-size: 40px;
+      font-weight: bolder;
+}
+.s3d02>p ,.s3d4>div>p {
+    font-size: 13px;
+    color: lightgrey;
+    
+}
+.s3img2{
+    margin-top: -70px;
+    margin-left: -6px;
+    box-shadow: 0px 0px 6px #fff;
+}
+.div00{
+    margin-top: 150px;
+    text-align: center;
+    color: #fff;
+}
+.div00>div{
+      height: 70px;
+      border-left: 2px solid rgb(255, 197, 71);
+      margin-top: 20px;
+      margin-left: 671px;
+}
+.img3{
+    margin-top: -50px;
+    /* margin-left: -6px; 
+    box-shadow: 0px 0px 6px #fff; */
+}
+.s4{
+    display: flex;
+    margin-top: 70px;
+    padding-bottom: 50px;
+    
+}
+.s4d2>li:hover{
+    color: #fff;
+    transition: 1s;
+}
+.s4d1{
+    text-align: justify;
+    width: 500px;
+    margin-left: 100px;
+    color: #fff;
+}
+.s4d2{
+    display: flex;
+    
+}
+.s4d2>li{
+    background-color: rgb(49, 46, 46);
+    color: darkgrey;
+    border-radius: 50px;
+    padding: 10px;
+    list-style: none;
+    margin: 10px;
+    text-align: center;
+}
+.s4d1>p,.s4d5>p{
+    margin-top: 10px;
+    font-size: 13px;
+    color: lightgrey;
+    width: 500px;
+}
+#s4b1{
+    padding: 8px;
+    background-color: tomato;
+    color: #fff;
+    border: 2px solid tomato;
+    box-shadow: 0.5px 0.5px 3px ghostwhite;
+    width: 130px;
+    margin:  30px 10px 10px 0px;
+}
+#s4b2{
+    padding: 8px;
+    background-color: transparent;
+    border-style: none;
+    outline-style: none;
+    color: #fff;
+    border-bottom: 2px solid tomato;
+    width: 150px;
+   
+    margin:  30px 3px 10px 5px;
+}
+#s4b1:hover{
+     background-color: transparent;
+     transition: 1s;
+}
+#s4b2:hover{
+background-color: tomato;
+border-style: groove;
+transition: 1s;
+box-shadow: 0.5px 0.5px 3px ghostwhite;
+}
+.s4d3{
+    margin-left: 200px;
+    margin-top: 50px;
+}
+.s4d3>img{box-shadow: 2px 2px 5px white;}
+.s4d4>img{box-shadow: 2px 2px 5px white;}
+
+.s4d4{
+    margin-left: 100px;
+    margin-top: 70px;
+}
+.s4d5{
+    text-align: justify;
+    width: 500px;
+    margin-left: 250px;
+    color: #fff;
+}
+.s5{
+    display: flex;
+    /* justify-content: space-between; */
+    color: #fff;
+    margin-top: 150px;
+
+}
+.s5d1{
+    width: 500px;
+}
+.s5d2{
+    width: 100px;
+    border-bottom: 2px solid tomato;
+}
+.s5d1 > h5{
+ margin-top: -20px;
+ margin-left: 110px;
+}
+.s5d1 > h1 {
+ margin-left: 80px;
+ padding: 5px;
+ margin-top: 10px;
+}
+.s5b1{
+    padding: 5px;
+    background-color: tomato;
+    color: #fff;
+    border: 2px solid tomato;
+    box-shadow: 0.5px 0.5px 3px ghostwhite;
+    width: 100px;
+    margin:  30px 0px 10px 90px;
+}
+.s5b1:hover{
+     background-color: transparent;
+     transition: 1s;
+}
+.s5d3{
+   margin-left: 250px;
+}
+.s5d3>input , .s5d3>textarea {
+    background-color: transparent;
+    outline-style: none;
+    border-style: none;
+    border-bottom: 1px solid #fff;
+    width: 300px;
+    margin-bottom:  10px;
+    margin-left: 10px;
+    color: #fff;
+}
+.s5d3>input:hover , .s5d3>textarea:hover{
+ box-shadow: 2px 2px 6px tomato;
+}
+.s5d3>label{
+  color: lightgrey;
+  
+}
+footer{
+    margin-top: 150px;
+    text-align: center;
+    color: #fff;
+    background-color: rgba(8, 18, 63, 0.432);
+    padding: 10px;
+}
+footer>h2>span>sub{
+    color: tomato;
+}
+footer>h2{
+    text-shadow: 1px 1px 2px ghostwhite;
+    font-style: italic;
+}
+footer>p{
+    color: lightgrey;
+    padding: 10px;
+}
+footer>div{
+    font-size: 40px;
+}
+footer>div>i{
+    margin: 10px;
+}
+footer>div>i:hover{
+    color: tomato;
+    transition: 1s;
+}
+
+

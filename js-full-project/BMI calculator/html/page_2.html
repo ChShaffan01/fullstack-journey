@@ -1,0 +1,102 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+<link rel="stylesheet" href="../style/page_2_style.css">
+<title>2nd page</title>
+</head>
+<body>
+<!-- ------------------------------------------------------------------------------------------------ -->
+
+<header>
+     <nav>
+        <span>C<sub>S_</sub><i>F</i>orge</span>
+  <ul>
+      <li><a href="../index.html">Home</a></li>  
+       <li class="nav-item dropdown">
+ <a class=" dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+ Calculators
+ </a>
+ <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+ <a onclick =  'alert("BMI Calculator is under construction. Check back soon!");'  class="dropdown-item" href="#">Deit Calculate</a>
+ <a onclick =  'alert("BMI Calculator is under construction. Check back soon!");'  class="dropdown-item" href="#">Kg to Lbs</a>
+ <a onclick =  'alert("BMI Calculator is under construction. Check back soon!");'  class="dropdown-item" href="#">Foot to Cm</a>
+
+
+ </div>
+      <li><a href="#contact">Contact</a></li> 
+      </ul>
+    
+ <form class="search_form">
+ <input type="search" class="hinp" placeholder="Search your food">
+        <button onclick =  'alert("BMI Calculator is under construction. Check back soon!");'  class="hbtn" type="submit"><i class="fa-solid fa-magnifying-glass"></i></button>
+ </form>
+ </div>
+ </nav>
+    </nav>
+</header>
+<section class="s01">
+ <img src="../icon/kcal_png.webp" alt="Something Wrong" width="100px" height="100px">
+
+</section>
+
+
+<section class="s1">
+ 
+<div class="s1d1">
+    <div class="s1d2">Your daily calorie requirements: <span id="sp1"></span></div>
+    <div class="s1d3">If you stay within this range, you’ll be able to maintain your weight.</div>
+    <div class="s1d4"></div>
+    <div class="s1d5">
+        Our recommendation: <br>
+Get your personalized plan from Yazio including a specific, individualized calorie goal to keep track of your calories at all times.
+    </div>
+</div>
+    
+</section>
+
+<section class="s2">
+
+    <div class="s2d1">
+        <button onclick =  'alert("BMI Calculator is under construction. Check back soon!");'  class="s2btn"><img src="../icon/weight-loss.png" alt="something error" width="50px" >Lose weight</button><br><br>
+         <button onclick =  'alert("BMI Calculator is under construction. Check back soon!");'  class="s2btn"><img src="../icon/cartoon-eyes.png" alt="something error" width="50px" >Maintain weight</button><br><br>
+          <button onclick =  'alert("BMI Calculator is under construction. Check back soon!");'  class="s2btn"><img src="../icon/weight-gain.png" alt="something error" width="50px" >Gain weight</button><br><br>
+           <button onclick =  'alert("BMI Calculator is under construction. Check back soon!");'  class="s2btn"><img src="../icon/muscle.png" alt="something error" width="50px" >Gain muscle</button><br><br>
+           <button onclick =  'alert("BMI Calculator is under construction. Check back soon!");'  class="s2btn"><img src="../icon/new-message.png" alt="something error" width="50px" >Something else</button><br><br>
+    </div>
+
+
+
+
+
+</section>
+ 
+
+
+
+<footer>
+
+<div></div>
+<pre>&#169; 2025 Victorious.All Rights Reserved.  |  Privacy Policy  |  Term of Use  |  Designed By CH-SHAFFAN</pre>
+
+</footer>
+
+
+
+
+<!-- ---------------------------------------------------------------------------------------------------->
+<script >
+let bmi = localStorage.getItem("bmi_value");
+let bmi2 = Math.floor(bmi);
+let bmi3 = bmi2 + 200;
+document.getElementById("sp1").innerHTML = bmi2 + ' - ' + bmi3 + ' kcal';
+</script>
+
+<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+</body>
+</html>
