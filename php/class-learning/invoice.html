@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title><link rel="stylesheet" href="bootstrap.css">
+    <style>
+
+        .sec-1{
+            margin-left: 300px;
+            margin-top: 100px;
+            width:60%;
+            text-transform: capitalize;
+            font-size: 1.1em;
+         
+        }
+        h1{
+        color: rgb(207, 36, 36);
+        }
+        .sec-2,form h1{
+            margin-left: 300px;
+            width: 60%;
+            text-transform: capitalize;
+        }
+        .btn{
+            width: 100px;
+            margin: 5px;
+            font-weight: bold;
+        }
+        .sec1{
+            width: 73%;
+            margin-left: 300px;
+        }
+        .sec1 div{
+            width: 40%;
+            font-style: italic;
+            font-size: 1.1em;
+        }
+    </style>
+</head>
+<body>
+    <section class="sec-1 d-flex justify-content-between">
+<div class="s1d1"><h1> Sale invoice</h1><br>
+<strong>Company name :</strong> digiboost <br>
+<strong>Adress :</strong> Main G.T Road Hakimabad Nowshera<br>
+<strong>Phone :</strong> 03320979756 <br>
+<strong>Email :</strong> digiboost@gmail.com
+</div>
+<div class="s1d2"><img src="img/logo.jpeg" alt=""></div>
+    </section><br>
+
+    <section class="sec1 d-flex justify-content-between">
+        <div> <br>
+            <strong>Invoice S.NO : </strong><span id="sno"> 1</span> <br>
+            <strong>DOP :</strong><span id="date"></span><br>
+            
+        </div>  
+        <div> <br>
+            <strong>Invoice # :</strong> CB-123-456<br>
+        <strong>P . O . # :</strong> CB-789-123 <br>
+        </div>
+    </section>
+
+    <br>
+    <br>
+    <form action="invoice.php" method="post">
+        <h1>Ship to</h1><br>
+    <section class="sec-2 row">
+        
+        <div class="s2d1 col-3">
+       <h4>C-Name</h4>
+       <input class="form-control" type="text" name="customername"></div> 
+        <div class="s2d1 col-3">
+       <h4>full_Address</h4>
+       <input class="form-control" type="address" name="address"></div> 
+        <div class="s2d1 col-3">
+       <h4>Email</h4>
+       <input class="form-control" type="email" name="email"></div>  
+       <div class="s2d1 col-3">
+       <h4>Phone</h4>
+       <input class="form-control" type="number" name="phone"></div>
+    </section> <br><br>
+   
+
+        <h1>Purchase Info</h1><br>
+        <section class="sec-2 row">
+            <div class="s2d1 col-3">
+           <h4>Item_Name</h4>
+           <input class="form-control" type="text" name="item"></div> 
+            <div class="s2d1 col-3">
+           <h4>quantity</h4>
+           <input class="form-control" id="quantity" type="address" name="quantity"></div> 
+            <div class="s2d1 col-3">
+           <h4>unit_price</h4>
+           <input class="form-control" id="price" type="text" name="unit-price"></div>  
+           <div class="s2d1 col-3">
+           <h4>amount</h4>
+           <input class="form-control " id="amount" type="number" name="amount"></div>
+        </section><br><br>
+   
+
+    
+        <section class="sec-2 row">
+            <div class="s2d1 col-3">
+           <h4>Item_Name</h4>
+           <input class="form-control" type="text" name="item2"></div> 
+            <div class="s2d1 col-3">
+           <h4>quantity</h4>
+           <input class="form-control" type="address" name="quantity2"></div> 
+            <div class="s2d1 col-3">
+           <h4>unit_price</h4>
+           <input class="form-control" type="text" name="unit-price2"></div>  
+           <div class="s2d1 col-3">
+           <h4>amount</h4>
+           <input class="form-control" type="number" name="amount2"></div>
+        </section>
+
+        <section class="sec-3 d-flex justify-content-center mt-5 m-5" >
+         <button type="reset" class="btn btn-outline-primary ">Reset</button>
+        <button type="submit" class="btn btn-outline-primary" onclick="fun2()">Submit</button>
+        </section>
+</form>
+<script>
+
+var y2 = new Date();
+  
+     document.getElementById("date").innerHTML =" "+y2 ;
+
+     function fun2(){
+       
+        var x = parseInt( document.getElementById("sno").innerHTML);
+        
+       return  document.getElementById('sno').innerHTML = x + 1;
+         
+     }
+
+    
+
+  
+</script>
+
+form
+</body>
+</html>
