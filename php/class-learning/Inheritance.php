@@ -1,0 +1,24 @@
+<?php
+
+class Fruit {
+  protected $name;
+
+  public function setType($name) {
+    $this->name = $name;
+  }
+}
+class Apple extends Fruit {
+  public function getType() {
+    echo "Name: " . $this->name . ".";
+  }
+}
+
+$apple = new Apple();
+$apple->setType("Apple");
+$apple->getType();
+
+
+
+
+
+?>
